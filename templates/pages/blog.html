@@ -1,0 +1,27 @@
+{%extends "base.html" %}
+{%block title%}Blog | PostgresOpen 2017{%endblock%}
+{%block pagetitle%}PostgresOpen 2017{%endblock%}
+{%block content%}
+		<!-- Main -->
+			<section id="main" class="wrapper">
+				<div class="container">
+
+					<header class="major">
+						<span class="header"><img src="{{media("images/blog.svg")}}" alt="" /></span>
+						<h2>Blog</h2>
+					</header>
+
+{%for blog in blogposts %}
+          <!-- Sponsorship -->
+          <section class="section">
+            <hr>
+            <h3>{{blog.title}}</h3>
+            <h4>Posted By: {{blog.sponsorname}} on {{blog.posttime|datetimeformat('%A, %B %d')}}</h4>
+            {{blog.content}}
+            <hr>
+          </section>
+{%endfor%}
+
+        </div>
+      </section>
+{% endblock %}
