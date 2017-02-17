@@ -5,6 +5,12 @@ This site is built by using the PG.EU static deployment tool.
 
 Clone this repo and the PG.EU one from https://git.postgresql.org/gitweb/?p=pgeu-website.git;a=summary
 
+Packages that are needed on a Debian system include:
+
+python
+python-jinja2
+python-dateutil
+
 Create your own context.override.json by copying the context.json and adjusting
 the values as necessary.  For example:
 
