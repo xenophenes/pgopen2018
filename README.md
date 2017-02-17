@@ -1,4 +1,3 @@
-# pgopen2017
 ## PostgresOpen 2017 Web Site
 This site is built by using the PG.EU static deployment tool. Packages that are needed on a Debian system include:
 ```
@@ -32,7 +31,7 @@ In context.override.json there is:
 
 For deploying locally, you could change that to:
 ```
-"linkbase": "file:////path/to/your/workdir/2017.postgresopen.org/",
+"linkbase": "file:///path/to/your/workdir/2017.postgresopen.org/",
 ```
 The same goes for 'mediabase'. Also add this line to context.override.json following the mediabase line:
 ```
