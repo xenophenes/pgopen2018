@@ -41,6 +41,8 @@ The same goes for 'mediabase'. Also add this line to context.override.json follo
 Finally, run the following to deploy:
 ```
 cd "${WORKDIR}"
+# the next line not needed the first time deploying
+rm -rf 2017.postgresopen.org/*
 pgeu-website/tools/deploystatic/deploystatic.py $(pwd)/pgopen2017 $(pwd)/2017.postgresopen.org
 ```
 
