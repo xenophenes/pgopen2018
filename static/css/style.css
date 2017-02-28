@@ -1409,3 +1409,9 @@
 		section#sponsorsimg {
 			text-align:center;
 		}
+
+		header img#side {
+			width: 5em;
+			margin: 0;
+			float: none;
+		}
