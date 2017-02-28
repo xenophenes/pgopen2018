@@ -1380,3 +1380,14 @@
 		  -o-transform: scaleX(1.2);
 		  transform: scaleX(1.2);
 		}
+
+		section#sponsors {
+			background-color: #0A2342;
+			padding: 1.5em;
+		}
+
+		section#sponsors h3 {
+			color: #F5F5F5;
+			text-align: center;
+			margin: 0;
+		}
