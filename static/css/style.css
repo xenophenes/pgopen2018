@@ -210,7 +210,11 @@
 		}
 
 		header img {
-			width: 5em;
+			width: 4em;
+			margin: 1em 0 1em 3em;
+			display: inline-block;
+			position: relative;
+			float: left;
 		}
 
 		.sponsor img {
@@ -967,11 +971,12 @@
 		#header h1 {
 			color: #ffffff;
 			height: inherit;
-			left: 3em;
+			left: 1em;
 			line-height: inherit;
 			margin: 0;
 			padding: 0;
-			position: absolute;
+			display: inline-block;
+			position: relative;
 		}
 
 			#header h1 a {
@@ -981,7 +986,9 @@
 		#header nav {
 			height: inherit;
 			line-height: inherit;
-			position: absolute;
+			position: relative;
+			float: right;
+			display: inline-block;
 			right: 3em;
 			vertical-align: middle;
 			font-family: 'Open Sans', sans-serif;
@@ -1379,4 +1386,15 @@
 		  -ms-transform: scaleX(1.2);
 		  -o-transform: scaleX(1.2);
 		  transform: scaleX(1.2);
+		}
+
+		section#sponsors {
+			background-color: #0A2342;
+			padding: 1.5em;
+		}
+
+		section#sponsors h3 {
+			color: #F5F5F5;
+			text-align: center;
+			margin: 0;
 		}
