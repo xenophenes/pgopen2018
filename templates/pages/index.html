@@ -13,7 +13,11 @@
 				</ul>
 			</section>
 			<section id="sponsors"><h3>Diamond Partners</h3></section>
-			<section id="sponsorsimg"><img src="./static/images/2ndQ_logo.png" alt="2ndQuadrant Logo"><img src="./static/images/citusdata.png" alt="Citus Data Logo"><img src="./static/images/2ndQ_logo.png" alt="PostgreSQL Logo"></section>
+			<section id="sponsorsimg">
+			{% for p in diamond %}
+				<a href="{{p.link}}" target="_blank"><img src="{{media("images/" + p.largelogo)}}" alt="{{p.name}}"></a>
+			{% endfor %}
+			</section>
 <!-- One -->
 			<section id="one" class="wrapper style1 special">
 				<div class="container">
