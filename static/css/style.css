@@ -1081,6 +1081,33 @@
 			margin-bottom: 1.75em;
 		}
 
+		@media only screen /*iPhone*/
+		  and (min-device-width: 320px)
+		  and (max-device-width: 568px)
+		  and (-webkit-min-device-pixel-ratio: 2)  {
+
+
+
+
+		    #banner {
+		        overflow: hidden;
+		        background: url(../images/banner.jpg) no-repeat center center;
+		        background-attachment: fixed;
+		        -webkit-background-size: cover;
+		        -moz-background-size: cover;
+		        -o-background-size: cover;
+		        background-size: cover;
+		        height: auto !important;
+		        max-width: 100%;
+		        width: 100%;
+		        z-index: -1;
+
+
+		    }
+
+		}
+
+
 		section.specialevent {
 			background-size: cover;
 			background-image: url(../images/golf.jpg);
