@@ -1398,3 +1398,14 @@
 			text-align: center;
 			margin: 0;
 		}
+
+		section#sponsorsimg img {
+			display: inline-block;
+			height: 5em;
+			margin:auto;
+			padding:0 5em;
+		}
+
+		section#sponsorsimg {
+			text-align:center;
+		}
