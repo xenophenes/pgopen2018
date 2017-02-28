@@ -1402,8 +1402,8 @@
 		section#sponsorsimg img {
 			display: inline-block;
 			height: 5em;
-			margin:auto;
-			padding:0 5em;
+			margin: auto;
+			padding: 1em 5em;
 		}
 
 		section#sponsorsimg {
