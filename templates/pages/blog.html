@@ -17,7 +17,7 @@
             <hr>
             <h3>{{blog.title}}</h3>
             <h4>Posted By: {{blog.sponsorname}} on {{blog.posttime|datetimeformat('%A, %B %d')}}</h4>
-            {{blog.content}}
+            {{blog.content|markdown}}
             <hr>
           </section>
 {%endfor%}

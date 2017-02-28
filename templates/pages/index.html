@@ -7,13 +7,19 @@
 				<h2>POSTGRESOPEN 2017</h2>
 				<p> SILICON VALLEY, CA | SEPTEMBER 6-8
 				<ul class="actions">
+					<!--
 					<li>
 						<a href="{{link("tickets/")}}" class="button big">REGISTER</a>
 					</li>
+					-->
 				</ul>
 			</section>
 			<section id="sponsors"><h3>Diamond Partners</h3></section>
-			<section id="sponsorsimg"><img src="./static/images/2ndQ_logo.png" alt="2ndQuadrant Logo"><img src="./static/images/citusdata.png" alt="Citus Data Logo"><img src="./static/images/2ndQ_logo.png" alt="PostgreSQL Logo"></section>
+			<section id="sponsorsimg">
+			{% for p in diamond %}
+				<a href="{{p.link}}" target="_blank"><img src="{{media("images/" + p.largelogo)}}" alt="{{p.name}}"></a>
+			{% endfor %}
+			</section>
 <!-- One -->
 			<section id="one" class="wrapper style1 special">
 				<div class="container">
@@ -58,7 +64,7 @@
 						<div class="6u 12u$(medium)">
 							<section class="box">
 								<ul class="unstyled">
-									<li><b>Call for Presentations Opens</b><br> April 17, 2017</li>
+									<li><b>Call for Presentations Opens</b><br> March 24, 2017</li>
 									<hr>
 									<li><b>Early Bird Registration Opens</b><br> May 15, 2017</li>
 									<hr>

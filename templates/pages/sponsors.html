@@ -23,6 +23,7 @@
           </section>
 
 		<section class="section">
+			<h3>Diamond</h3>
 			{% set row_start = cycler('<div class="row text-center">','') %}
 			{% set row_end = cycler('','</div>') %}
 
@@ -33,6 +34,7 @@
 					<!-- Diamond -->
 						<h3>Diamond</h3>
 						<a href="{{p.link}}" target="_blank"><img id="sponsors" src="{{media("images/" + p.largelogo)}}" alt="{{p.name}}"></a>
+      
 						<div class="caption">
 							<small><em>{{p.intro}}</em></small>
 						</div>

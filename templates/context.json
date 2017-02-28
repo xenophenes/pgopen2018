@@ -12,6 +12,14 @@
 	    "badgelogo": "2ndQ_logo.png",
 	    "link": "https://www.2ndquadrant.com/",
 	    "intro": "2ndQuadrant"
+	},
+	{
+	    "name": "Citus Data",
+	    "logo": "citusdata.png",
+	    "largelogo": "citusdata.png",
+	    "badgelogo": "citusdata.png",
+	    "link": "https://www.citusdata.com/",
+	    "intro": "Citus Data"
 	}
     ],
 
