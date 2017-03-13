@@ -10,7 +10,41 @@
 		<meta name="author" content="United States PostgreSQL Association" />
 
 		<title>{%block title%}PostgresOpen 2017{%endblock%}</title>
-		<link rel="img_src" href="{{media("images/banner2.jpg")}}" />
+		
+		<!-- Twitter Meta Tags -->
+		<meta name="twitter:card" content="summary_large_image">
+		<meta name="twitter:site" content="@postgresopen">
+		<meta name="twitter:creator" content="@postgresopen">
+		<meta name="twitter:title" content="PostgresOpen | PostgreSQL Conference">
+		<meta name="twitter:description" content="PostgresOpen 2017 will be held on September 6th - 8th in Silicon Valley, at the Parc 55 Hilton Hotel.">
+
+		<!-- Facebook Open Graph Meta Tags -->
+		<meta property="og:image:width" content="1200">
+		<meta property="og:image:height" content="800">
+		<meta property="og:url" content="https://2017.postgresopen.org/">
+		<meta property="og:title" content="PostgresOpen | PostgreSQL Conference">
+		<meta property="og:site_name" content="Postgres Open">
+		<meta property="og:image" content="https://2017.postgresopen.org/static/images/banner2.jpg">
+
+		<!-- Structured Data -->
+		<script type="application/ld+json">
+		{
+			"@context": "http://schema.org",
+			"@type": "ProfessionalService",
+			"url": "https://2017.postgresopen.org/",
+			"logo": "https://2017.postgresopen.org/static/images/sv_elephant.png",
+			"image": "https://2017.postgresopen.org/static/images/banner2.jpg",
+			"email": "mailto:subscribe@postgresopen.org",
+			"description": "PostgresOpen 2017 will be held on September 6th - 8th in Silicon Valley, at the Parc 55 Hilton Hotel.",
+			"name": "Postgres Open",
+			"sameAs" : [
+			"https://www.facebook.com/PostgresOpen",
+			"http://www.twitter.com/postgresopen",
+			"https://www.youtube.com/user/postgresopen",
+			"https://plus.google.com/+postgresopen/posts"]
+		}
+		</script>
+		
 		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 		<!--[if lte IE 8]><script src="{{media("js/html5shiv.js")}}"></script><![endif]-->
 		<script src="{{media("js/jquery.min.js")}}"></script>
