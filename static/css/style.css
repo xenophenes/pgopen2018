@@ -416,6 +416,10 @@
 		opacity: 1.0;
 	}
 
+	.errorlist {
+		color: red;
+	}
+
 /* Box */
 
 	.box {
