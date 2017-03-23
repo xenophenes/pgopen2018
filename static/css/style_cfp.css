@@ -4,6 +4,9 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto+Condensed:400,300);
 
 /* Basic */
+	.errorlist {
+ 		color: red;
+ 	}
 
 	body {
 		background: #fff;
