@@ -31,6 +31,14 @@
 	    "badgelogo": "vc-logo-horizontal_071115.png",
 	    "link": "https://www.vividcortex.com/",
 	    "intro": "VividCortex"
+	},
+	{
+	    "name": "Amazon Web Services",
+	    "logo": "amazon-web-services.png",
+	    "largelogo": "amazon-web-services.png",
+	    "badgelogo": "amazon-web-services.png",
+	    "link": "://aws.amazon.com/",
+	    "intro": "Amazon Web Services"
 	}
     ],
 
