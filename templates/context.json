@@ -34,9 +34,9 @@
 	},
 	{
 	    "name": "Amazon Web Services",
-	    "logo": "amazon-web-services.png",
-	    "largelogo": "amazon-web-services.png",
-	    "badgelogo": "amazon-web-services.png",
+	    "logo": "amazon-web-services.gif",
+	    "largelogo": "amazon-web-services.gif",
+	    "badgelogo": "amazon-web-services.gif",
 	    "link": "https://aws.amazon.com/",
 	    "intro": "Amazon Web Services"
 	}
