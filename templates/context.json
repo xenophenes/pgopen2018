@@ -37,7 +37,7 @@
 	    "logo": "amazon-web-services.png",
 	    "largelogo": "amazon-web-services.png",
 	    "badgelogo": "amazon-web-services.png",
-	    "link": "://aws.amazon.com/",
+	    "link": "https://aws.amazon.com/",
 	    "intro": "Amazon Web Services"
 	}
     ],
