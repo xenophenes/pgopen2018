@@ -33,9 +33,10 @@
 	a {
 		font-weight: bold;
 		color: #2298AC;
+		text-decoration: none;
 	}
 
-		a:active, a:hover {
+		a:hover {
 			color: #F21B3F;
 			text-decoration: underline;
 		}
