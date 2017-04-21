@@ -42,6 +42,17 @@
 	}
     ],
 
+    "silver": [
+	{
+	    "name": "Cybertec",
+	    "logo": "Cybertec_Logo_2017_1024px_slogan.jpg",
+	    "largelogo": "Cybertec_Logo_2017_1024px_slogan.jpg",
+	    "badgelogo": "Cybertec_Logo_2017_1024px_slogan.jpg",
+	    "link": "https://www.cybertec.at/",
+	    "intro": "Cybertec"
+	}
+    ],
+
 	"blogposts": [
 	{
 		"title": "Blog Entry 1",
