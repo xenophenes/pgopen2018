@@ -1493,8 +1493,9 @@
 		}
 
 		form input[type=submit] {
-		    width: 18em;
 				margin: .5em 0;
+				font-size: 14px;
+				padding: 0;
 				border-radius: 7px;
 		}
 
