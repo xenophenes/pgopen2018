@@ -1462,3 +1462,43 @@
 		    list-style-type: none;
 		    margin: 0 0 2em 0;
 		}
+
+		div.regwrap {
+		    width: 100%;
+		    overflow: hidden;
+		    padding: 1px;
+		}
+
+		legend {
+		    font-size: 1.35em;
+		    padding: 1em 0;
+		    line-height: 1.5em;
+		    font-family: 'Roboto Condensed', sans-serif;
+		    text-transform: uppercase;
+		    font-weight: 700;
+		    color: #0A2342;
+		}
+
+		label {
+		    color: #0A2342;
+		    display: block;
+		    font-size: 1em;
+		    font-weight: 700;
+		    margin: 1em 0 0 0;
+		}
+
+		input[type="text"], input[type="password"], input[type="email"], select {
+		    height: 2.75em;
+		    margin-bottom: .5em;
+		}
+
+		form input[type=submit] {
+		    width: 18em;
+				margin: .5em 0;
+				border-radius: 7px;
+		}
+
+		input[type="submit"]:hover, input[type="reset"]:hover, input[type="button"]:hover, .button:hover {
+		    background-color: #0A2342;
+		    text-decoration: none;
+		}
