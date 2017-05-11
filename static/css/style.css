@@ -1513,3 +1513,15 @@
 			    width: 33%;
 			}
 		}
+
+@media screen and (max-width: 767px) {
+		img#sponsors {
+	    margin: 0;
+	    padding: 2em 7em 2em 0;
+	    width: 100%;
+		}
+
+		.col-md-6 {
+			width: 100%;
+		}
+	}
