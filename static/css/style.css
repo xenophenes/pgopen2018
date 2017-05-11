@@ -1503,3 +1503,13 @@
 		    background-color: #0A2342;
 		    text-decoration: none;
 		}
+
+		@media (min-width: 979px) {
+			.caption {
+				margin: 1em 0 2em 0;
+			}
+
+			.col-md-6 {
+			    width: 33%;
+			}
+		}
