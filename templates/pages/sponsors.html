@@ -31,7 +31,7 @@
 			   is not divisibleby 2 %} col-md-offset-3 {% endif %}">
 					<!-- Diamond -->
 						<a href="{{p.link}}" target="_blank"><img id="sponsors" src="{{media("images/" + p.largelogo)}}" alt="{{p.name}}"></a>
-      
+
 						<div class="caption">
 							<small><em>{{p.intro}}</em></small>
 						</div>
@@ -49,27 +49,17 @@
 
 		<section class="section">
 			<h3>Gold</h3>
-			{% set row_start = cycler('<div class="row text-center">','') %}
-			{% set row_end = cycler('','</div>') %}
-
-		  {% for p in gold %}
-		  {{ row_start.next() }}
-		  <div class="col-md-6 {% if loop.revindex0 == 0 and loop.length
-			   is not divisibleby 2 %} col-md-offset-3 {% endif %}">
+			<div class="row text-center">
+			  {% for p in gold %}
+				  <div class="col-md-6">
 					<!-- Gold -->
 						<a href="{{p.link}}" target="_blank"><img id="sponsors" src="{{media("images/" + p.largelogo)}}" alt="{{p.name}}"></a>
-      
 						<div class="caption">
 							<small><em>{{p.intro}}</em></small>
 						</div>
 					</div>
-					{% if loop.revindex0 == 0 %}
-
-						</div>
-					{% else %}
-						{{ row_end.next() }}
-					{% endif %}
 				{% endfor %}
+			</div>
 		</section>
 
         <hr>
@@ -85,7 +75,7 @@
 			   is not divisibleby 2 %} col-md-offset-3 {% endif %}">
 					<!-- Silver -->
 						<a href="{{p.link}}" target="_blank"><img id="sponsors" src="{{media("images/" + p.largelogo)}}" alt="{{p.name}}"></a>
-      
+
 						<div class="caption">
 							<small><em>{{p.intro}}</em></small>
 						</div>
