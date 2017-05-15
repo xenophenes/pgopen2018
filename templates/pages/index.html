@@ -14,14 +14,12 @@
 					-->
 				</ul>
 			</section>
-			<div class="container">
-				<section id="sponsors"><h3>Diamond Partners</h3></section>
-				<section id="sponsorsimg">
-				{% for p in diamond %}
-					<a href="{{p.link}}" target="_blank"><img src="{{media("images/" + p.largelogo)}}" alt="{{p.name}}"></a>
-				{% endfor %}
-				</section>
-			</div>
+			<section id="sponsors"><h3>Diamond Partners</h3></section>
+			<section id="sponsorsimg">
+			{% for p in diamond %}
+				<a href="{{p.link}}" target="_blank"><img src="{{media("images/" + p.largelogo)}}" alt="{{p.name}}"></a>
+			{% endfor %}
+			</section>
 <!-- One -->
 			<section id="one" class="wrapper style1 special">
 				<div class="container">
@@ -57,7 +55,6 @@
 							<h3>Important Dates</h3>
 							<hr>
 								<b><p>Training: September 6th<br>Conference: September 7th-8th</p></b>
-							<hr>
 						</section>
 					</div>
 					<div class="row">
