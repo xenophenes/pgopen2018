@@ -3,7 +3,7 @@
 {%block pagetitle%}PostgresOpen 2017{%endblock%}
 {%block content%}
 		<!-- Banner -->
-			<section id="banner">
+			<section id="banner" class="jumbotron">
 				<h2>POSTGRESOPEN 2017</h2>
 				<p> SILICON VALLEY, CA | SEPTEMBER 6-8
 				<ul class="actions">
@@ -14,18 +14,20 @@
 					-->
 				</ul>
 			</section>
-			<section id="sponsors"><h3>Diamond Partners</h3></section>
-			<section id="sponsorsimg">
-			{% for p in diamond %}
-				<a href="{{p.link}}" target="_blank"><img src="{{media("images/" + p.largelogo)}}" alt="{{p.name}}"></a>
-			{% endfor %}
-			</section>
+			<div class="container">
+				<section id="sponsors"><h3>Diamond Partners</h3></section>
+				<section id="sponsorsimg">
+				{% for p in diamond %}
+					<a href="{{p.link}}" target="_blank"><img src="{{media("images/" + p.largelogo)}}" alt="{{p.name}}"></a>
+				{% endfor %}
+				</section>
+			</div>
 <!-- One -->
 			<section id="one" class="wrapper style1 special">
 				<div class="container">
 
-					<div class="row 150%">
-						<div class="6u 12u$(medium)">
+					<div class="row">
+						<div class="col-sm-6">
 							<section class="box">
 								<i class="icon big rounded color1 fa-cloud"></i>
 								<h3>Join Us in San Francisco!</h3>
@@ -36,7 +38,7 @@
 										<p><b><a href="mailto:subscribe@postgresopen.org?subject=Add Me">Click here to sign up for our mailing list!</a></b></p>
 							</section>
 						</div>
-						<div class="6u 12u$(medium)">
+						<div class="col-sm-6">
 							<section class="box">
 								<i class="icon big rounded color9 fa-desktop"></i>
 								<h3>PostgreSQL Community</h3>
@@ -49,19 +51,17 @@
 						</div>
 					</div>
 
-					<div class="row 150%">
-						<div class="12u 12u$(medium)">
-							<section class="box">
-								<i class="icon big rounded color6 fa-rocket"></i>
-								<h3>Important Dates</h3>
-								<hr>
-									<b><p>Training: September 6th<br>Conference: September 7th-8th</p></b>
-								<hr>
-							</section>
-						</div>
+					<div class="container">
+						<section class="box">
+							<i class="icon big rounded color6 fa-rocket"></i>
+							<h3>Important Dates</h3>
+							<hr>
+								<b><p>Training: September 6th<br>Conference: September 7th-8th</p></b>
+							<hr>
+						</section>
 					</div>
-					<div class="row 150%">
-						<div class="6u 12u$(medium)">
+					<div class="row">
+						<div class="col-sm-6">
 							<section class="box">
 								<ul class="unstyled">
 									<li><b>Call for Presentations Opens</b><br> March 24th, 2017</li>
@@ -77,7 +77,7 @@
 								</ul>
 							</section>
 						</div>
-						<div class="6u 12u$(medium)">
+						<div class="col-sm-6">
 							<section class="box">
 								<ul class="unstyled">
 									<li><b>Early Bird Registration Closes</b><br> July 9th, 2017</li>
