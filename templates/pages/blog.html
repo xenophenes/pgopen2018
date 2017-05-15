@@ -2,22 +2,16 @@
 {%block title%}Blog | PostgresOpen 2017{%endblock%}
 {%block pagetitle%}PostgresOpen 2017{%endblock%}
 {%block content%}
-		<!-- Main -->
-
-					<header class="major">
-						<span class="header"><img id="side" src="{{media("images/blog.svg")}}" alt="" /></span>
-						<h2>Blog</h2>
-					</header>
+<!-- Main -->
+<h1>Blog</h1>
 
 {%for blog in blogposts %}
-          <!-- Sponsorship -->
-          <section class="section">
-            <hr>
-            <h3>{{blog.title}}</h3>
-            <h4>Posted By: {{blog.sponsorname}} on {{blog.posttime|datetimeformat('%A, %B %d')}}</h4>
-            {{blog.content|markdown}}
-            <hr>
-          </section>
+  <!-- Sponsorship -->
+  <hr>
+  <h3>{{blog.title}}</h3>
+  <h4>Posted By: {{blog.sponsorname}} on {{blog.posttime|datetimeformat('%A, %B %d')}}</h4>
+  {{blog.content|markdown}}
+  <hr>
 {%endfor%}
 
 {% endblock %}

@@ -2,91 +2,76 @@
 {%block title%}Sponsors | PostgresOpen 2017{%endblock%}
 {%block pagetitle%}PostgresOpen 2017{%endblock%}
 {%block content%}
-		<!-- Main -->
+<h1>Sponsors</h1>
 
-					<header class="major">
-						<span class="header"><img id="side" src="{{media("images/sponsors.svg")}}" alt="" /></span>
-						<h2>Sponsors</h2>
-					</header>
+<hr>
+<h3>Sponsorship</h3>
+<p>
+	PostgresOpen wouldn't be possible without the support of our wonderful
+	sponsors!  If you are interested in sponsoring the conference, please
+	see our <b><a href="{{link("becomesponsor/")}}">sponsoring campaign</a></b> and let us know!
+</p>
+<hr>
 
-          <!-- Sponsorship -->
-          <section class="section">
-            <hr>
-            <h3>Sponsorship</h3>
-            <p>PostgresOpen wouldn't be possible without the support of our wonderful
-               sponsors!  If you are interested in sponsoring the conference, please
-			   see our <b><a href="{{link("becomesponsor/")}}">sponsoring campaign</a></b> and let us know!
-            </p>
-            <hr>
-          </section>
+<h3>Diamond</h3>
+{% set row_start = cycler('<div class="row text-center">','') %}
+{% set row_end = cycler('','</div>') %}
 
-		<section class="section">
-			<h3>Diamond</h3>
-			{% set row_start = cycler('<div class="row text-center">','') %}
-			{% set row_end = cycler('','</div>') %}
+{% for p in diamond %}
+{{ row_start.next() }}
+<div class="col-md-6 {% if loop.revindex0 == 0 and loop.length
+ is not divisibleby 2 %} col-md-offset-3 {% endif %}">
+	<!-- Diamond -->
+		<a href="{{p.link}}" target="_blank"><img id="sponsors" src="{{media("images/" + p.largelogo)}}" alt="{{p.name}}"></a>
 
-		  {% for p in diamond %}
-		  {{ row_start.next() }}
-		  <div class="col-md-6 {% if loop.revindex0 == 0 and loop.length
-			   is not divisibleby 2 %} col-md-offset-3 {% endif %}">
-					<!-- Diamond -->
-						<a href="{{p.link}}" target="_blank"><img id="sponsors" src="{{media("images/" + p.largelogo)}}" alt="{{p.name}}"></a>
+		<div class="caption">
+			<small><em>{{p.intro}}</em></small>
+		</div>
+	</div>
+	{% if loop.revindex0 == 0 %}
 
-						<div class="caption">
-							<small><em>{{p.intro}}</em></small>
-						</div>
-					</div>
-					{% if loop.revindex0 == 0 %}
+		</div>
+	{% else %}
+		{{ row_end.next() }}
+	{% endif %}
+{% endfor %}
+    <hr>
 
-						</div>
-					{% else %}
-						{{ row_end.next() }}
-					{% endif %}
-				{% endfor %}
-          </section>
+<h3>Gold</h3>
+<div class="row text-center">
+{% for p in gold %}
+  <div class="col-md-6">
+	<!-- Gold -->
+		<a href="{{p.link}}" target="_blank"><img id="sponsors" src="{{media("images/" + p.largelogo)}}" alt="{{p.name}}"></a>
+		<div class="caption">
+			<small><em>{{p.intro}}</em></small>
+		</div>
+	</div>
+{% endfor %}
+</div>
+<hr>
 
-            <hr>
+<h3>Silver</h3>
+{% set row_start = cycler('<div class="row text-center">','') %}
+{% set row_end = cycler('','</div>') %}
 
-		<section class="section">
-			<h3>Gold</h3>
-			<div class="row text-center">
-			  {% for p in gold %}
-				  <div class="col-md-6">
-					<!-- Gold -->
-						<a href="{{p.link}}" target="_blank"><img id="sponsors" src="{{media("images/" + p.largelogo)}}" alt="{{p.name}}"></a>
-						<div class="caption">
-							<small><em>{{p.intro}}</em></small>
-						</div>
-					</div>
-				{% endfor %}
-			</div>
-		</section>
+{% for p in silver %}
+{{ row_start.next() }}
+<div class="col-md-6 {% if loop.revindex0 == 0 and loop.length
+ is not divisibleby 2 %} col-md-offset-3 {% endif %}">
+	<!-- Silver -->
+		<a href="{{p.link}}" target="_blank"><img id="sponsors" src="{{media("images/" + p.largelogo)}}" alt="{{p.name}}"></a>
 
-        <hr>
+		<div class="caption">
+			<small><em>{{p.intro}}</em></small>
+		</div>
+	</div>
+	{% if loop.revindex0 == 0 %}
 
-		<section class="section">
-			<h3>Silver</h3>
-			{% set row_start = cycler('<div class="row text-center">','') %}
-			{% set row_end = cycler('','</div>') %}
-
-		  {% for p in silver %}
-		  {{ row_start.next() }}
-		  <div class="col-md-6 {% if loop.revindex0 == 0 and loop.length
-			   is not divisibleby 2 %} col-md-offset-3 {% endif %}">
-					<!-- Silver -->
-						<a href="{{p.link}}" target="_blank"><img id="sponsors" src="{{media("images/" + p.largelogo)}}" alt="{{p.name}}"></a>
-
-						<div class="caption">
-							<small><em>{{p.intro}}</em></small>
-						</div>
-					</div>
-					{% if loop.revindex0 == 0 %}
-
-						</div>
-					{% else %}
-						{{ row_end.next() }}
-					{% endif %}
-				{% endfor %}
-		</section>
+		</div>
+	{% else %}
+		{{ row_end.next() }}
+	{% endif %}
+{% endfor %}
 
 {% endblock %}
