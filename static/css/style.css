@@ -1178,24 +1178,34 @@
 	}
 
 	.navbar-brand>img {
-		width: 3em;
-		margin: 4px;
+		width: 2.5em;
+		margin: 7px;
 		display: inline-block;
 	}
 
 	.navbar-nav>li>a {
 		line-height: inherit;
-		color: #375aa8;
+		color: #cdced0;
 		text-transform: uppercase;
 		padding: 1em;
 		font-family: 'Roboto Condensed', sans-serif;
 	}
+	.navbar-nav>li>a:hover {
+		color: #fff;
+		background-color: initial;
+	}
 
 	.heading {
+		color: #fff;
 		margin:0;
 		display: inline-block;
+		font-size: 1.25em;
 	}
 
 	.jumbotron {
 		margin: 0;
+	}
+
+	.navbar-fixed-top {
+		background-color: #0A2342;
 	}
