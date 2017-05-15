@@ -47,102 +47,26 @@
 		}
 		</script>
 
-		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
-		<!--[if lte IE 8]><script src="{{media("js/html5shiv.js")}}"></script><![endif]-->
 		<script src="{{media("js/jquery.min.js")}}"></script>
-		<script src="{{media("js/skel.min.js")}}"></script>
-		<script src="{{media("js/skel-layers.min.js")}}"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<script src="{{media("js/jquery.matchHeight-min.js")}}"></script>
+		<script src="{{media("js/main.js")}}"></script>
+		<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+		<link href="{{media("css/style.css")}}" rel="stylesheet">
 
 		<script>
-/*
-	Transit by TEMPLATED
-	templated.co @templatedco
-	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
-*/
-(function($) {
-	skel.init({
-		reset: 'full',
-		breakpoints: {
-			global: {
-				href: "{{media("css/style.css")}}",
-				containers: 1400,
-				grid: { gutters: ['2em', 0] }
-			},
-			xlarge: {
-				media: '(max-width: 1680px)',
-				href: "{{media("css/style-xlarge.css")}}",
-				containers: 1200
-			},
-			large: {
-				media: '(max-width: 1280px)',
-				href: "{{media("css/style-large.css")}}",
-				containers: 960,
-				grid: { gutters: ['1.5em', 0] },
-				viewport: { scalable: false }
-			},
-			medium: {
-				media: '(max-width: 980px)',
-				href: "{{media("css/style-medium.css")}}",
-				containers: '90%!'
-			},
-			small: {
-				media: '(max-width: 736px)',
-				href: "{{media("css/style-small.css")}}",
-				containers: '90%!',
-				grid: { gutters: ['1.25em', 0] }
-			},
-			xsmall: {
-				media: '(max-width: 480px)',
-				href: "{{media("css/style-xsmall.css")}}"
-			}
-		},
-		plugins: {
-			layers: {
-				config: {
-					mode: 'transform'
-				},
-				navButton: {
-					breakpoints: 'medium',
-					height: '4em',
-					html: '<span class="toggle" data-action="toggleLayer" data-args="navPanel"></span>',
-					position: 'top-left',
-					side: 'top',
-					width: '6em'
-				},
-				navPanel: {
-					animation: 'overlayX',
-					breakpoints: 'medium',
-					clickToHide: true,
-					height: '100%',
-					hidden: true,
-					html: '<div data-action="moveElement" data-args="nav"></div>',
-					orientation: 'vertical',
-					position: 'top-left',
-					side: 'left',
-					width: 250
-				}
-			}
-		}
-	});
-	$(function() {
-		var	$window = $(window),
-			$body = $('body');
-		// Disable animations/transitions until the page has loaded.
-			$body.addClass('is-loading');
-			$window.on('load', function() {
-				$body.removeClass('is-loading');
-			});
-	});
-})(jQuery);
+			(function($) {
+				$(function() {
+					var	$window = $(window),
+						$body = $('body');
+					// Disable animations/transitions until the page has loaded.
+						$body.addClass('is-loading');
+						$window.on('load', function() {
+							$body.removeClass('is-loading');
+						});
+				});
+			})(jQuery);
 		</script>
-
-		<!-- <script src="{{media("js/feed.js")}}"></script> -->
-		<noscript>
-			<link rel="stylesheet" href="{{media("css/skel.css")}}" />
-			<link rel="stylesheet" href="{{media("css/style.css")}}" />
-			<link rel="stylesheet" href="{{media("css/style-xlarge.css")}}" />
-			<link rel="stylesheet" href="{{media("css/feed.css")}}" />
-		</noscript>
 		<script>
 		  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 		  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -151,25 +75,36 @@
 		  ga('create', 'UA-76808262-1', 'auto');
 		  ga('send', 'pageview');
 		</script>
-{%block extrahead%}{%endblock%}
+		{%block extrahead%}{%endblock%}
 	</head>
 	<body class="{{page}}">
 
 		<!-- Header -->
-			<header id="header">
-				<img src="{{media("images/sv_elephant.png")}}" alt="PostgreSQL Logo">
-				<h1 class="headerh1"><a href="/">PostgresOpen 2017</a></h1>
-				<nav id="nav">
-					<ul>
-						<li><a href="{{link("")}}">Home</a></li>
-						{{menulink("about", "About")}}
-						{{menulink("callforpapers", "Call for Papers")}}
-						{{menulink("tickets", "Registration")}}
-						{{menulink("venue", "Venue & Hotel")}}
-						{{menulink("sponsors", "Sponsors")}}
-					</ul>
-				</nav>
-			</header>
+			<nav id="header" class="navbar navbar-fixed-top">
+				<div id="header-container" class="container navbar-container">
+					<!-- Brand and toggle get grouped for better mobile display -->
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false">
+							<i class="fa fa-bars"></i>
+						</button>
+						<a class="navbar-brand" href="/">
+							<img id="logo" src="{{media("images/logo.png")}}" alt="PGDay Austin Logo">
+							<h1 class="heading">PGDay Austin 2017</h1>
+						</a>
+					</div>
+					<!-- Collect the nav links, forms, and other content for toggling -->
+					<div id="navbar" class="collapse navbar-collapse">
+						<ul class="nav navbar-nav navbar-right">
+							<li><a href="{{link("")}}">Home</a></li>
+							{{menulink("about", "About")}}
+							{{menulink("callforpapers", "Call for Papers")}}
+							{{menulink("tickets", "Registration")}}
+							{{menulink("venue", "Venue & Hotel")}}
+							{{menulink("sponsors", "Sponsors")}}
+						</ul>
+					</div><!-- /.navbar-collapse -->
+				</div><!-- /.container-fluid -->
+			</nav>
       <section id="main" class="wrapper">
 				<div class="container">
       		{%block content%}{%endblock%}
