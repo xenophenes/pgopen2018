@@ -1093,6 +1093,7 @@
 
 		#footer h2, #footer h3, #footer h4 {
 			color: #ffffff;
+			margin-top: 1em;
 		}
 
 		#footer p, #footer a, #footer li {
