@@ -54,4 +54,18 @@
 {% endfor %}
 </div>
 <hr>
+
+<h3>Supporter</h3>
+<div class="row text-center">
+{% for p in supporter %}
+  <div class="col-md-6 col-md-4">
+	<!-- Silver -->
+		<a href="{{p.link}}" target="_blank"><img id="sponsors" src="{{media("images/" + p.largelogo)}}" alt="{{p.name}}"></a>
+		<div class="caption">
+			<small><em>{{p.intro}}</em></small>
+		</div>
+	</div>
+{% endfor %}
+</div>
+<hr>
 {% endblock %}

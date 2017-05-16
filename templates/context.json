@@ -61,6 +61,25 @@
 	}
     ],
 
+    "supporter": [
+	{
+	    "name": "JackDB",
+	    "logo": "jackdb-logomark-700x200.png",
+	    "largelogo": "jackdb-logomark-700x200.png",
+	    "badgelogo": "jackdb-logomark-700x200.png",
+	    "link": "https://www.jackdb.com/",
+	    "intro": "JackDB"
+	},
+	{
+	    "name": "PostgreSQL Experts",
+	    "logo": "pg_exp.png",
+	    "largelogo": "pg_exp.png",
+	    "badgelogo": "pg_exp.png",
+	    "link": "https://www.pgexperts.com/",
+	    "intro": "PostgreSQL Experts"
+	}
+    ],
+
 	"blogposts": [
 	{
 		"title": "Blog Entry 1",
