@@ -14,33 +14,23 @@
 <hr>
 
 <h3>Diamond</h3>
-{% set row_start = cycler('<div class="row text-center">','') %}
-{% set row_end = cycler('','</div>') %}
-
+<div class="row text-center">
 {% for p in diamond %}
-{{ row_start.next() }}
-<div class="col-md-6 {% if loop.revindex0 == 0 and loop.length
- is not divisibleby 2 %} col-md-offset-3 {% endif %}">
-	<!-- Diamond -->
+	<div class="col-md-6 col-md-4">
+		<!-- Diamond -->
 		<a href="{{p.link}}" target="_blank"><img id="sponsors" src="{{media("images/" + p.largelogo)}}" alt="{{p.name}}"></a>
-
 		<div class="caption">
 			<small><em>{{p.intro}}</em></small>
 		</div>
 	</div>
-	{% if loop.revindex0 == 0 %}
-
-		</div>
-	{% else %}
-		{{ row_end.next() }}
-	{% endif %}
 {% endfor %}
-    <hr>
+</div>
+<hr>
 
 <h3>Gold</h3>
 <div class="row text-center">
 {% for p in gold %}
-  <div class="col-md-6">
+  <div class="col-md-6 col-md-4">
 	<!-- Gold -->
 		<a href="{{p.link}}" target="_blank"><img id="sponsors" src="{{media("images/" + p.largelogo)}}" alt="{{p.name}}"></a>
 		<div class="caption">
@@ -52,26 +42,16 @@
 <hr>
 
 <h3>Silver</h3>
-{% set row_start = cycler('<div class="row text-center">','') %}
-{% set row_end = cycler('','</div>') %}
-
+<div class="row text-center">
 {% for p in silver %}
-{{ row_start.next() }}
-<div class="col-md-6 {% if loop.revindex0 == 0 and loop.length
- is not divisibleby 2 %} col-md-offset-3 {% endif %}">
+  <div class="col-md-6 col-md-4">
 	<!-- Silver -->
 		<a href="{{p.link}}" target="_blank"><img id="sponsors" src="{{media("images/" + p.largelogo)}}" alt="{{p.name}}"></a>
-
 		<div class="caption">
 			<small><em>{{p.intro}}</em></small>
 		</div>
 	</div>
-	{% if loop.revindex0 == 0 %}
-
-		</div>
-	{% else %}
-		{{ row_end.next() }}
-	{% endif %}
 {% endfor %}
-
+</div>
+<hr>
 {% endblock %}
