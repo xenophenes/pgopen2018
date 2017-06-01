@@ -11,7 +11,7 @@
 	    "largelogo": "2ndQ_logo.png",
 	    "badgelogo": "2ndQ_logo.png",
 	    "link": "https://www.2ndquadrant.com/",
-	    "intro": "2ndQuadrant"
+	    "intro": "As the Gold Standard worldwide for everything PostgreSQL, 2ndQuadrant consistently contributes enterprise features to enhance performance, scalability, security, and stability in PostgreSQL.  Spanning 22 countries and 5 continents, 2ndQuadrant is the largest single collective organization of PostgreSQL experts of any company globally.<br>Our PostgreSQL experts are the developers of popular tools such as:<br>Postgres-BDR- Multi-master replication for geographically distributed clusters<br>pglogical - Fully integrated extension for logical replication<br>Postgres-XL - Horizontally Scalable, Massively Parallel Database with flexibility to handle OLAP & OLTP workloads<br>repmgr - Automatic failover management tool for configuring High Availability environments<br>Barman - Backup Manager and Disaster Recovery Tool for PostgreSQL<br>In addition to developing these tools, our PostgreSQL experts provide 24/7 Production Support, Oracle migration services, Remote DBA support, PostgreSQL Consulting, and Training."
 	},
 	{
 	    "name": "Citus Data",
