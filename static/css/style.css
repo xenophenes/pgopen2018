@@ -47,7 +47,7 @@
 	}
 
 	em, i {
-		font-style: italic;
+		font-style: initial;
 	}
 
 	p {
@@ -1229,7 +1229,8 @@
 
 @media (min-width: 979px) {
 	.caption {
-		margin: 1em 0 2em 0;
+		margin: 1em 0 2em 1em;
+		text-align: left;
 	}
 }
 
