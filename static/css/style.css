@@ -260,7 +260,7 @@
 	}
 
 		form input[type=submit] {
-		   width: 16em !important;
+		   min-width: 16em !important;
 		   margin: 2px 0 !important;
 		}
 
