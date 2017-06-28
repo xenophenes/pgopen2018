@@ -58,6 +58,14 @@
 	    "badgelogo": "Cybertec_Logo_2017_1024px_slogan.jpg",
 	    "link": "https://www.cybertec.at/",
 	    "intro": "Cybertec"
+	},
+	{
+	    "name": "data egret",
+	    "logo": "DE_logo_horizontal.png",
+	    "largelogo": "DE_logo_horizontal.png",
+	    "badgelogo": "DE_logo_horizontal.png",
+	    "link": "http://dataegret.com/",
+	    "intro": "data egret"
 	}
     ],
 
