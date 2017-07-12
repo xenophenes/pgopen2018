@@ -8,12 +8,38 @@
 <hr>
 <h3>Schedule</h3>
 <p>
-	The schedule is not yet available as we are currently accepting papers.
-	If you are interested in submitting a talk, please see the <b><a href="{{link("callforpapers/")}}">Call For Papers.</a></b>
-</p>
-<p>
-	The schedule will be posted in July.
+  You can find the full conference information at the
+  <a href="{{conference.confurl}}">conference website</a>.
+</p><p>
+  This schedule is subject to changes. This page will be updated when any
+  changes occur. This schedule is also available in <a href="ical/">iCalendar</a> format.
 </p>
 <hr>
+{%for day in days%}
+<h2>{{day.day|datetimeformat("%A, %B %d")}}</h2>
+<div class="schedwrap" style="height: {{day.schedule_height}}px; width: {{day.schedule_width}}px;">
+{%for room in day.rooms%}
+ <div class="sessblock roomheader" style="left: {{room.leftpos}}px; width: {{room.widthpos}}px; height: {{room.heightpos}}px;">
+ {{room.name}}
+ </div>
+{%endfor%}
+{%for session in day.sessions%}
+ <div class="sessblock track{{session.track.id}}" style="top: {{session.toppos}}px; left: {{session.leftpos}}px; width: {{session.widthpos}}px; height: {{session.heightpos}}px;">
+{%if session.id%}
+  <a href="session/{{session.id}}-{{session.title|slugify}}/">{{session.timeslot}}<br/>{{session.title}}</a>
+{%else%}
+  {{session.timeslot}} - {{session.title}}
+{%endif%}
+  {%for speaker in session.speakers %}{%if loop.first%}<br/>{%else%}, {%endif%}<i><a href="speaker/{{speaker.id}}-{{speaker.name|slugify}}/">{{speaker.name}}</a></i>{%endfor%}
+ </div>
+{%endfor%}
+</div>
+
+{%endfor%}
+
+<h2>Tracks</h2>
+{%for track in tracks%}
+<div class="track{{track.id}}">{{track.trackname}}</div>
+{%endfor%}
 
 {% endblock %}
