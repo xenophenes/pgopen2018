@@ -10,10 +10,11 @@
 <p>
   You can find the full conference information at the
   <a href="{{conference.confurl}}">conference website</a>.
+</p><p>
   This schedule is subject to changes. This page will be updated when any
-  changes occur.
+  changes occur. This schedule is also available in <a href="ical/">iCalendar</a> format.
 </p>
-
+<hr>
 {%for day in days%}
 <h2>{{day.day|datetimeformat("%A, %B %d")}}</h2>
 <div class="schedwrap" style="height: {{day.schedule_height}}px; width: {{day.schedule_width}}px;">
@@ -35,8 +36,6 @@
 </div>
 
 {%endfor%}
-
-<p>This schedule is also available in <a href="ical/">iCalendar</a> format.</p>
 
 <h2>Tracks</h2>
 {%for track in tracks%}
