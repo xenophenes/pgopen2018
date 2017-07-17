@@ -19,7 +19,7 @@
 	    "largelogo": "citusdata.png",
 	    "badgelogo": "citusdata.png",
 	    "link": "https://www.citusdata.com/",
-	    "intro": "Citus Data makes sharding simple. The Citus database is an extension to Postgres that is designed for scale and made for B2B application developers everywhere. Whether you need a multi-tenant database that scales out, or a SQL database to power real-time analytics, Citus is ideal for app devs who want to focus on their app—not their database. Citus is available as a fully-managed database as a service on AWS, as open source, and as on-prem software."
+	    "intro": "Citus is worry-free Postgres for SaaS. Made to scale out, Citus is an extension to Postgres (not a fork) that distributes queries across any number of servers. Whether you have a multi-tenant app that needs scale, or you need to deliver real-time analytics to customers, with Citus you can focus on your app—not your database.<br>At Citus Data, we make it simple to shard PostgreSQL. Available as a fully-managed database as a service on AWS, as on-prem software, and as open source."
 	}
     ],
 
