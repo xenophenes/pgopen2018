@@ -19,7 +19,7 @@
 	    "largelogo": "citusdata.png",
 	    "badgelogo": "citusdata.png",
 	    "link": "https://www.citusdata.com/",
-	    "intro": "Citus is worry-free Postgres for SaaS. Made to scale out, Citus is an extension to Postgres (not a fork) that distributes queries across any number of servers. Whether you have a multi-tenant app that needs scale, or you need to deliver real-time analytics to customers, with Citus you can focus on your app—not your database.<br>At Citus Data, we make it simple to shard PostgreSQL. Available as a fully-managed database as a service on AWS, as on-prem software, and as open source."
+	    "intro": "Citus is worry-free Postgres for SaaS. Made to scale out, Citus is an extension to Postgres (not a fork) that distributes queries across any number of servers. Whether you have a multi-tenant app that needs scale, or you need to deliver real-time analytics to customers, with Citus you can focus on your app—not your database.<br><br>At Citus Data, we make it simple to shard PostgreSQL. Available as a fully-managed database as a service on AWS, as on-prem software, and as open source."
 	}
     ],
 
