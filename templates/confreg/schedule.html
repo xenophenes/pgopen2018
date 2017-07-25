@@ -32,6 +32,9 @@ div.sessblock p {
    display: inline-block;
    margin: 0;
 }
+.sessblock.roomheader h4 {
+    font-size: 1em;
+}
 {%for track in tracks%}
 div.track{{track.id}} {
    background-color: {{track.color}};
@@ -57,7 +60,7 @@ available for mobile users.
 <div class="schedwrap" style="height: {{day.schedule_height}}px; width: {{day.schedule_width}}px;">
 {%for room in day.rooms%}
  <div class="sessblock roomheader" style="left: {{room.leftpos}}px; width: {{room.widthpos}}px; height: {{room.heightpos}}px;">
- {{room.name}}
+    <h4>{{room.name}}</h4>
  </div>
 {%endfor%}
 {%for session in day.sessions%}
