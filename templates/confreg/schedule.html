@@ -48,33 +48,54 @@ div.track{{track.id}} {
 <h1>Schedule</h1>
 <hr>
 <p>
+This schedule is also available for <a href="/m/{{conference.urlname}}/">mobile users</a>
+and an <a href="ical/">iCalendar</a> format is also available.
+<br>
 You can find the full conference information at the
 <a href="{{conference.confurl}}">conference website</a>.
 This schedule is subject to changes and will be updated when any
-changes occur. <a href="ical/">iCalendar</a> format is also 
-available for mobile users.
+changes occur.
 </p>
 
 {% for day in days %}
+<section class="section">
+<div class="container">
+<hr>
 <h2>{{day.day|datetimeformat("%A, %B %d")}}</h2>
-<div class="schedwrap" style="height: {{day.schedule_height}}px; width: {{day.schedule_width}}px;">
+<div class="row">
 {%for room in day.rooms%}
- <div class="sessblock roomheader" style="left: {{room.leftpos}}px; width: {{room.widthpos}}px; height: {{room.heightpos}}px;">
-    <h4>{{room.name}}</h4>
- </div>
-{%endfor%}
+<div class="4u 12u$(medium)">
+<section class="box">
+<h4 style="text-align:center;"><div class="sessblock roomheader">
+    {{room.name}}
+</div></h4>
+<hr>
 {%for session in day.sessions%}
- <div class="sessblock track{{session.track.id}}" style="top: {{session.toppos}}px; left: {{session.leftpos}}px; width: {{session.widthpos}}px; height: {{session.heightpos}}px;">
+{%if session.leftpos == room.leftpos or session.widthpos == 1198 %}
 {%if session.id%}
-  <a href="session/{{session.id}}-{{session.title|slugify}}/"><p>{{session.timeslot}}<br/>{{session.title}}</p></a>
+<div class="sessblock track{{session.track.id}}" style="height: 120px;"><p>
 {%else%}
-  {{session.timeslot}} - {{session.title}}
+<div class="sessblock track{{session.track.id}}" style="height: 20px;"><p>
 {%endif%}
-  {%for speaker in session.speakers %}{%if loop.first%}<br/>{%else%}, {%endif%}<p><a href="speaker/{{speaker.id}}-{{speaker.name|slugify}}/">{{speaker.name}}</a></p>{%endfor%}
- </div>
+{%if session.id%}
+<a href="session/{{session.id}}-{{session.title|slugify}}/">{{session.timeslot}}<br/><b>{{session.title}}</b><br/></a>
+{%else%}
+{{session.timeslot}} - <b>{{session.title}}</b>
+{%endif%}
+{%for speaker in session.speakers %}{%if loop.first%}{%else%}, {%endif%}<i><a href="speaker/{{speaker.id}}-{{speaker.name|slugify}}/">{{speaker.name}}</a></i>{%endfor%}
+</p></div>
+<hr>
+{%endif%}
+{%endfor%}
+</section>
+</div>
 {%endfor%}
 </div>
-
+</div>
+</section>
 {%endfor%}
+
+</div>
+</section>
 
 {%endblock%}
