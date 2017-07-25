@@ -27,6 +27,10 @@ div.sessblock a {
    text-decoration: none;
    color: black;
 }
+div.sessblock p {
+   display: inline-block;
+   margin: 0;
+}
 {%for track in tracks%}
 div.track{{track.id}} {
    background-color: {{track.color}};
@@ -41,7 +45,7 @@ div.track{{track.id}} {
 You can find the full conference information at the
 <a href="{{conference.confurl}}">conference website</a>.
 This schedule is subject to changes and will be updated when any
-changes occur. <a href="ical/">iCalendar</a> format. is also 
+changes occur. <a href="ical/">iCalendar</a> format is also 
 available for mobile users.
 </p>
 
