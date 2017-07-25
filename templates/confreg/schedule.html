@@ -35,12 +35,14 @@ div.track{{track.id}} {
 </style>
 {%endblock%}
 {%block content%}
-<h1>Conference Schedule - {{conference}}</h1>
+<h1>Schedule</h1>
+<hr>
 <p>
 You can find the full conference information at the
 <a href="{{conference.confurl}}">conference website</a>.
-This schedule is subject to changes. This page will be updated when any
-changes occur.
+This schedule is subject to changes and will be updated when any
+changes occur. <a href="ical/">iCalendar</a> format. is also 
+available for mobile users.
 </p>
 
 {% for day in days %}
@@ -54,17 +56,15 @@ changes occur.
 {%for session in day.sessions%}
  <div class="sessblock track{{session.track.id}}" style="top: {{session.toppos}}px; left: {{session.leftpos}}px; width: {{session.widthpos}}px; height: {{session.heightpos}}px;">
 {%if session.id%}
-  <a href="session/{{session.id}}-{{session.title|slugify}}/">{{session.timeslot}}<br/>{{session.title}}</a>
+  <a href="session/{{session.id}}-{{session.title|slugify}}/"><p>{{session.timeslot}}<br/>{{session.title}}</p></a>
 {%else%}
   {{session.timeslot}} - {{session.title}}
 {%endif%}
-  {%for speaker in session.speakers %}{%if loop.first%}<br/>{%else%}, {%endif%}<i><a href="speaker/{{speaker.id}}-{{speaker.name|slugify}}/">{{speaker.name}}</a></i>{%endfor%}
+  {%for speaker in session.speakers %}{%if loop.first%}<br/>{%else%}, {%endif%}<p><a href="speaker/{{speaker.id}}-{{speaker.name|slugify}}/">{{speaker.name}}</a></p>{%endfor%}
  </div>
 {%endfor%}
 </div>
 
 {%endfor%}
-
-<p>This schedule is also available in <a href="ical/">iCalendar</a> format.</p>
 
 {%endblock%}
