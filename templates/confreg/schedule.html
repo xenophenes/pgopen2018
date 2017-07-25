@@ -58,41 +58,41 @@ changes occur.
 </p>
 
 {% for day in days %}
-<section class="section">
-<div class="container">
-<hr>
-<h2>{{day.day|datetimeformat("%A, %B %d")}}</h2>
-<div class="row">
-{%for room in day.rooms%}
-<div class="4u 12u$(medium)">
-<section class="box">
-<h4 style="text-align:center;"><div class="sessblock roomheader">
-    {{room.name}}
-</div></h4>
-<hr>
-{%for session in day.sessions%}
-{%if session.leftpos == room.leftpos or session.widthpos == 1198 %}
-{%if session.id%}
-<div class="sessblock track{{session.track.id}}" style="height: 120px;"><p>
-{%else%}
-<div class="sessblock track{{session.track.id}}" style="height: 20px;"><p>
-{%endif%}
-{%if session.id%}
-<a href="session/{{session.id}}-{{session.title|slugify}}/">{{session.timeslot}}<br/><b>{{session.title}}</b><br/></a>
-{%else%}
-{{session.timeslot}} - <b>{{session.title}}</b>
-{%endif%}
-{%for speaker in session.speakers %}{%if loop.first%}{%else%}, {%endif%}<i><a href="speaker/{{speaker.id}}-{{speaker.name|slugify}}/">{{speaker.name}}</a></i>{%endfor%}
-</p></div>
-<hr>
-{%endif%}
-{%endfor%}
-</section>
-</div>
-{%endfor%}
-</div>
-</div>
-</section>
+   <section id="one" class="wrapper style1 special">
+      <div class="container">
+         <hr>
+         <h2>{{day.day|datetimeformat("%A, %B %d")}}</h2>
+         <div class="row">
+            {%for room in day.rooms%}
+               <div class="col-sm-4">
+                  <section class="box">
+                     <h4 style="text-align:center;"><div class="sessblock roomheader">{{room.name}}</div></h4>
+                     <hr>
+                     {%for session in day.sessions%}
+                     {%if session.leftpos == room.leftpos or session.widthpos == 1198 %}
+                        {%if session.id%}
+                           <div class="sessblock track{{session.track.id}}" style="height: 120px;"><p>
+                           {%else%}
+                           <div class="sessblock track{{session.track.id}}" style="height: 20px;">
+                              <p>
+                                 {%endif%}
+                                 {%if session.id%}
+                                    <a href="session/{{session.id}}-{{session.title|slugify}}/">{{session.timeslot}}<br/><b>{{session.title}}</b><br/></a>
+                                    {%else%}
+                                    {{session.timeslot}} - <b>{{session.title}}</b>
+                                 {%endif%}
+                                 {%for speaker in session.speakers %}{%if loop.first%}{%else%}, {%endif%}<i><a href="speaker/{{speaker.id}}-{{speaker.name|slugify}}/">{{speaker.name}}</a></i>{%endfor%}
+                              </p>
+                           </div>
+                           <hr>
+                        {%endif%}
+                     {%endfor%}
+                  </section>
+               </div>
+            {%endfor%}
+         </div>
+      </div>
+   </section>
 {%endfor%}
 
 </div>
