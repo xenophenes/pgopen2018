@@ -64,15 +64,16 @@ changes occur.
          <h2>{{day.day|datetimeformat("%A, %B %d")}}</h2>
          <div class="row">
             {%for room in day.rooms%}
-               <div class="col-sm-4">
                   <section class="box">
                      <h4 style="text-align:center;"><div class="sessblock roomheader">{{room.name}}</div></h4>
                      <hr>
                      {%for session in day.sessions%}
                      {%if session.leftpos == room.leftpos or session.widthpos == 1198 %}
                         {%if session.id%}
-                           <div class="sessblock track{{session.track.id}}" style="height: 120px;"><p>
+               <div class="col-sm-4">
+                           <div class="sessblock track{{session.track.id}}" style="height: 120px; width: {{session.widthpos}}"><p>
                            {%else%}
+               <div class="col-sm-12">
                            <div class="sessblock track{{session.track.id}}" style="height: 20px;">
                               <p>
                                  {%endif%}
@@ -84,11 +85,11 @@ changes occur.
                                  {%for speaker in session.speakers %}{%if loop.first%}{%else%}, {%endif%}<i><a href="speaker/{{speaker.id}}-{{speaker.name|slugify}}/">{{speaker.name}}</a></i>{%endfor%}
                               </p>
                            </div>
+               </div>
                            <hr>
                         {%endif%}
                      {%endfor%}
                   </section>
-               </div>
             {%endfor%}
          </div>
       </div>
