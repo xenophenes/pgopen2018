@@ -72,8 +72,9 @@ changes occur.
                         {%if session.id%}
                <div class="col-sm-4">
                            <div class="sessblock track{{session.track.id}}" style="height: 120px; width: {{session.widthpos}}"><p>
+               </div>
                            {%else%}
-               <div class="col-sm-12">
+               <div class="row"><div class="col-sm-12">
                            <div class="sessblock track{{session.track.id}}" style="height: 20px;">
                               <p>
                                  {%endif%}
@@ -85,7 +86,7 @@ changes occur.
                                  {%for speaker in session.speakers %}{%if loop.first%}{%else%}, {%endif%}<i><a href="speaker/{{speaker.id}}-{{speaker.name|slugify}}/">{{speaker.name}}</a></i>{%endfor%}
                               </p>
                            </div>
-               </div>
+                </div></div>
                            <hr>
                         {%endif%}
                      {%endfor%}
