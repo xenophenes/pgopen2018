@@ -14,15 +14,13 @@ div.schedwrap {
    margin-bottom: 6em;
 }
 div.sessblock {
-   border: 1px solid gray;
-   overflow:hidden;
-   position: absolute;
+
 }
 div.roomheader {
-   font-weight: bold;
-   font-size: 1.2em;
-   top: 0px;
+   font-weight: 700;
    text-align: center;
+   font-size: 1.1em;
+   line-height: 1.5em;
 }
 div.sessblock a {
    text-decoration: none;
@@ -58,40 +56,39 @@ changes occur.
 </p>
 
 {% for day in days %}
-   <section id="one" class="wrapper style1 special">
+   <section class="wrapper special">
       <div class="container">
          <hr>
          <h2>{{day.day|datetimeformat("%A, %B %d")}}</h2>
-         <div class="row">
-            {%for room in day.rooms%}
-                  <section class="box">
-                     <h4 style="text-align:center;"><div class="sessblock roomheader">{{room.name}}</div></h4>
-                     <hr>
-                     {%for session in day.sessions%}
-                     {%if session.leftpos == room.leftpos or session.widthpos == 1198 %}
-                        {%if session.id%}
-               <div class="col-sm-4">
-                           <div class="sessblock track{{session.track.id}}" style="height: 120px; width: {{session.widthpos}}"><p>
-                           {%else%}
-               <div class="col-sm-12">
-                           <div class="sessblock track{{session.track.id}}" style="height: 20px;">
-                              <p>
-                                 {%endif%}
-                                 {%if session.id%}
-                                    <a href="session/{{session.id}}-{{session.title|slugify}}/">{{session.timeslot}}<br/><b>{{session.title}}</b><br/></a>
-                                    {%else%}
-                                    {{session.timeslot}} - <b>{{session.title}}</b>
-                                 {%endif%}
-                                 {%for speaker in session.speakers %}{%if loop.first%}{%else%}, {%endif%}<i><a href="speaker/{{speaker.id}}-{{speaker.name|slugify}}/">{{speaker.name}}</a></i>{%endfor%}
-                              </p>
-                           </div>
-               </div>
-                           <hr>
-                        {%endif%}
-                     {%endfor%}
-                  </section>
-            {%endfor%}
-         </div>
+         {%for room in day.rooms%}
+               <section class="box">
+                  <h4 style="text-align:center;"><div class="sessblock roomheader">{{room.name}}</div></h4>
+                  <hr>
+                  {%for session in day.sessions%}
+                  {%if session.leftpos == room.leftpos or session.widthpos == 1198 %}
+                     {%if session.id%}
+            <div class="col-sm-4">
+                        <div class="sessblock track{{session.track.id}}" style="height: 120px; width: {{session.widthpos}}"><p>
+            </div>
+                        {%else%}
+            <div class="row"><div class="col-sm-12">
+                        <div class="sessblock track{{session.track.id}}" style="height: 20px;">
+                           <p>
+                              {%endif%}
+                              {%if session.id%}
+                                 <a href="session/{{session.id}}-{{session.title|slugify}}/">{{session.timeslot}}<br/><b>{{session.title}}</b><br/></a>
+                                 {%else%}
+                                 {{session.timeslot}} - <b>{{session.title}}</b>
+                              {%endif%}
+                              {%for speaker in session.speakers %}{%if loop.first%}{%else%}, {%endif%}<i><a href="speaker/{{speaker.id}}-{{speaker.name|slugify}}/">{{speaker.name}}</a></i>{%endfor%}
+                           </p>
+                        </div>
+             </div></div>
+                        <hr>
+                     {%endif%}
+                  {%endfor%}
+               </section>
+         {%endfor%}
       </div>
    </section>
 {%endfor%}
