@@ -23,6 +23,17 @@
 	}
     ],
 
+    "platinum": [
+      {
+        "name": "Heroku",
+  	    "logo": "heroku.svg",
+  	    "largelogo": "heroku.svg",
+  	    "badgelogo": "heroku.svg",
+  	    "link": "https://www.heroku.com/",
+  	    "intro": "Heroku, a Salesforce company and industry pioneer in platform as a service (PaaS), enables developers to build and run applications entirely in the cloud, without the need to purchase or maintain any servers or software. Over 8 million apps, including ones from Product Hunt, Casper and Citrix run on Heroku. With support for the most popular languages such as Ruby and Node.js, high-scale data services including Postgres, Redis and Kafka, and an add-ons ecosystem featuring over 150 cloud application services, Heroku provides companies from startups to Fortune 500 enterprises with a faster and more effective way to create, deploy and manage beautiful apps in the cloud."
+      }
+    ],
+
     "gold": [
 	{
 	    "name": "VividCortex",
@@ -66,7 +77,15 @@
 	    "badgelogo": "DE_logo_horizontal.png",
 	    "link": "http://dataegret.com/",
 	    "intro": "data egret"
-	}
+	},
+  {
+      "name": "opentable",
+      "logo": "opentable.png",
+      "largelogo": "opentable.svg",
+      "badgelogo": "opentable.eps",
+      "link": "https://www.opentable.com/start/home",
+      "intro": "opentable"
+  }
     ],
 
     "supporter": [
@@ -95,6 +114,24 @@
 	    "intro": "Pandora"
 	}
     ],
+    "community partner": [
+      {
+        "name": "PostgreSQL US",
+        "logo": "pgus.png",
+        "largelogo": "pgus.png",
+        "badgelogo": "pgus.png",
+        "link": "https://postgresql.us/associatedprojects/",
+        "intro": "PostgreSQL US"
+      },
+      {
+        "name": "Foss4G",
+        "logo": "foss4g.png",
+        "largelogo": "foss4g.png",
+        "badgelogo": "foss4g.png",
+        "link": "http://2017.foss4g.org/community-partner/",
+        "intro": "Foss4G"
+      }
+    ]
 
 	"blogposts": [
     {
@@ -113,252 +150,252 @@
 
     "tracks": [
     {
-      "color": "#859900", 
-      "incfp": true, 
-      "trackname": "PostgresOpen 2017", 
+      "color": "#859900",
+      "incfp": true,
+      "trackname": "PostgresOpen 2017",
       "sortkey": 100
-    }, 
+    },
     {
-      "color": "#FFFFEE", 
-      "incfp": false, 
-      "trackname": "Breaks", 
+      "color": "#FFFFEE",
+      "incfp": false,
+      "trackname": "Breaks",
       "sortkey": 120
     }
     ],
 
     "days": [
     {
-      "schedule_height": 872.0, 
-      "schedule_width": 600, 
-      "day": "2017-03-21", 
+      "schedule_height": 872.0,
+      "schedule_width": 600,
+      "day": "2017-03-21",
       "rooms": [
         {
-          "heightpos": 28, 
-          "name": "Drottningholm", 
+          "heightpos": 28,
+          "name": "Drottningholm",
           "sessions": [
             {
-              "leftpos": 0, 
-              "heightpos": 43.0, 
-              "length": 30.0, 
-              "room": null, 
-              "title": "Registration", 
+              "leftpos": 0,
+              "heightpos": 43.0,
+              "length": 30.0,
+              "room": null,
+              "title": "Registration",
               "track": {
-                "color": "#FFFFEE", 
-                "incfp": false, 
-                "trackname": "Breaks", 
+                "color": "#FFFFEE",
+                "incfp": false,
+                "trackname": "Breaks",
                 "sortkey": 120
-              }, 
-              "cross_schedule": true, 
-              "timeslot": "08:30 - 09:00", 
-              "widthpos": 598, 
+              },
+              "cross_schedule": true,
+              "timeslot": "08:30 - 09:00",
+              "widthpos": 598,
               "toppos": 30.0
-            }, 
+            },
             {
-              "leftpos": 0, 
-              "heightpos": 20.5, 
-              "length": 15.0, 
-              "room": null, 
-              "title": "Welcome and Opening", 
+              "leftpos": 0,
+              "heightpos": 20.5,
+              "length": 15.0,
+              "room": null,
+              "title": "Welcome and Opening",
               "track": {
-                "color": "#FFFFEE", 
-                "incfp": false, 
-                "trackname": "Breaks", 
+                "color": "#FFFFEE",
+                "incfp": false,
+                "trackname": "Breaks",
                 "sortkey": 120
-              }, 
-              "cross_schedule": true, 
-              "timeslot": "09:00 - 09:15", 
-              "widthpos": 598, 
+              },
+              "cross_schedule": true,
+              "timeslot": "09:00 - 09:15",
+              "widthpos": 598,
               "toppos": 75.0
-            }, 
+            },
             {
               "track": {
-                "color": "#859900", 
-                "incfp": true, 
-                "trackname": "PostgresOpen 2017", 
+                "color": "#859900",
+                "incfp": true,
+                "trackname": "PostgresOpen 2017",
                 "sortkey": 100
-              }, 
-              "id": 1458, 
-              "toppos": 97.5, 
-              "heightpos": 75.0, 
+              },
+              "id": 1458,
+              "toppos": 97.5,
+              "heightpos": 75.0,
               "speakers": [
                 {
-                  "lastmodified": "2016-12-22T08:43:39.872159", 
-                  "fullname": "Speaker 1", 
-                  "company": "Company 1", 
-                  "abstract": "Speaker Abstract Number 1.", 
+                  "lastmodified": "2016-12-22T08:43:39.872159",
+                  "fullname": "Speaker 1",
+                  "company": "Company 1",
+                  "abstract": "Speaker Abstract Number 1.",
                   "twittername": ""
                 }
-              ], 
+              ],
               "room": {
-                "roomname": "Room 1", 
+                "roomname": "Room 1",
                 "sortkey": 100
-              }, 
-              "title": "Talk Number 1", 
-              "leftpos": 0, 
-              "length": 50.0, 
-              "timeslot": "09:15 - 10:05", 
+              },
+              "title": "Talk Number 1",
+              "leftpos": 0,
+              "length": 50.0,
+              "timeslot": "09:15 - 10:05",
               "widthpos": 598
-            }, 
+            },
             {
-              "leftpos": 0, 
-              "heightpos": 35.5, 
-              "length": 25.0, 
-              "room": null, 
-              "title": "Coffee", 
+              "leftpos": 0,
+              "heightpos": 35.5,
+              "length": 25.0,
+              "room": null,
+              "title": "Coffee",
               "track": {
-                "color": "#FFFFEE", 
-                "incfp": false, 
-                "trackname": "Breaks", 
+                "color": "#FFFFEE",
+                "incfp": false,
+                "trackname": "Breaks",
                 "sortkey": 120
-              }, 
-              "cross_schedule": true, 
-              "timeslot": "10:05 - 10:30", 
-              "widthpos": 598, 
+              },
+              "cross_schedule": true,
+              "timeslot": "10:05 - 10:30",
+              "widthpos": 598,
               "toppos": 172.5
-            }, 
+            },
             {
               "track": {
-                "color": "#859900", 
-                "incfp": true, 
-                "trackname": "PostgresOpen 2017", 
+                "color": "#859900",
+                "incfp": true,
+                "trackname": "PostgresOpen 2017",
                 "sortkey": 100
-              }, 
-              "id": 1501, 
-              "toppos": 210.0, 
-              "heightpos": 75.0, 
+              },
+              "id": 1501,
+              "toppos": 210.0,
+              "heightpos": 75.0,
               "speakers": [
                 {
-                  "lastmodified": "2015-08-17T18:04:24.018834", 
-                  "fullname": "Speaker 2", 
-                  "company": "Company 2", 
-                  "abstract": "Speaker Abstract Number 2.", 
+                  "lastmodified": "2015-08-17T18:04:24.018834",
+                  "fullname": "Speaker 2",
+                  "company": "Company 2",
+                  "abstract": "Speaker Abstract Number 2.",
                   "twittername": ""
                 }
-              ], 
+              ],
               "room": {
-                "roomname": "Room 1", 
+                "roomname": "Room 1",
                 "sortkey": 100
-              }, 
-              "title": "Talk Number 2", 
-              "leftpos": 0, 
-              "length": 50.0, 
-              "timeslot": "10:30 - 11:20", 
+              },
+              "title": "Talk Number 2",
+              "leftpos": 0,
+              "length": 50.0,
+              "timeslot": "10:30 - 11:20",
               "widthpos": 598
-            } 
-          ], 
-          "leftpos": 0, 
-          "widthpos": 598, 
+            }
+          ],
+          "leftpos": 0,
+          "widthpos": 598,
           "id": 70
         }
-      ], 
+      ],
       "sessions": [
         {
-          "leftpos": 0, 
-          "heightpos": 43.0, 
-          "length": 30.0, 
-          "room": null, 
-          "title": "Registration", 
+          "leftpos": 0,
+          "heightpos": 43.0,
+          "length": 30.0,
+          "room": null,
+          "title": "Registration",
           "track": {
-            "color": "#FFFFEE", 
-            "incfp": false, 
-            "trackname": "Breaks", 
+            "color": "#FFFFEE",
+            "incfp": false,
+            "trackname": "Breaks",
             "sortkey": 120
-          }, 
-          "cross_schedule": true, 
-          "timeslot": "08:30 - 09:00", 
-          "widthpos": 598, 
+          },
+          "cross_schedule": true,
+          "timeslot": "08:30 - 09:00",
+          "widthpos": 598,
           "toppos": 30.0
-        }, 
+        },
         {
-          "leftpos": 0, 
-          "heightpos": 20.5, 
-          "length": 15.0, 
-          "room": null, 
-          "title": "Welcome and Opening", 
+          "leftpos": 0,
+          "heightpos": 20.5,
+          "length": 15.0,
+          "room": null,
+          "title": "Welcome and Opening",
           "track": {
-            "color": "#FFFFEE", 
-            "incfp": false, 
-            "trackname": "Breaks", 
+            "color": "#FFFFEE",
+            "incfp": false,
+            "trackname": "Breaks",
             "sortkey": 120
-          }, 
-          "cross_schedule": true, 
-          "timeslot": "09:00 - 09:15", 
-          "widthpos": 598, 
+          },
+          "cross_schedule": true,
+          "timeslot": "09:00 - 09:15",
+          "widthpos": 598,
           "toppos": 75.0
-        }, 
+        },
         {
           "track": {
-            "color": "#859900", 
-            "incfp": true, 
-            "trackname": "PostgresOpen 2017", 
+            "color": "#859900",
+            "incfp": true,
+            "trackname": "PostgresOpen 2017",
             "sortkey": 100
-          }, 
-          "id": 1458, 
-          "toppos": 97.5, 
-          "heightpos": 75.0, 
+          },
+          "id": 1458,
+          "toppos": 97.5,
+          "heightpos": 75.0,
           "speakers": [
             {
-              "lastmodified": "2016-12-22T08:43:39.872159", 
-              "fullname": "Speaker 1", 
-              "company": "Company 1", 
-              "abstract": "Speaker Abstract Number 1.", 
+              "lastmodified": "2016-12-22T08:43:39.872159",
+              "fullname": "Speaker 1",
+              "company": "Company 1",
+              "abstract": "Speaker Abstract Number 1.",
               "twittername": ""
             }
-          ], 
+          ],
           "room": {
-            "roomname": "Room 1", 
+            "roomname": "Room 1",
             "sortkey": 100
-          }, 
-          "title": "Talk Number 1", 
-          "leftpos": 0, 
-          "length": 50.0, 
-          "timeslot": "09:15 - 10:05", 
+          },
+          "title": "Talk Number 1",
+          "leftpos": 0,
+          "length": 50.0,
+          "timeslot": "09:15 - 10:05",
           "widthpos": 598
-        }, 
+        },
         {
-          "leftpos": 0, 
-          "heightpos": 35.5, 
-          "length": 25.0, 
-          "room": null, 
-          "title": "Coffee", 
+          "leftpos": 0,
+          "heightpos": 35.5,
+          "length": 25.0,
+          "room": null,
+          "title": "Coffee",
           "track": {
-            "color": "#FFFFEE", 
-            "incfp": false, 
-            "trackname": "Breaks", 
+            "color": "#FFFFEE",
+            "incfp": false,
+            "trackname": "Breaks",
             "sortkey": 120
-          }, 
-          "cross_schedule": true, 
-          "timeslot": "10:05 - 10:30", 
-          "widthpos": 598, 
+          },
+          "cross_schedule": true,
+          "timeslot": "10:05 - 10:30",
+          "widthpos": 598,
           "toppos": 172.5
-        }, 
+        },
         {
           "track": {
-            "color": "#859900", 
-            "incfp": true, 
-            "trackname": "PostgresOpen 2017", 
+            "color": "#859900",
+            "incfp": true,
+            "trackname": "PostgresOpen 2017",
             "sortkey": 100
-          }, 
-          "id": 1501, 
-          "toppos": 210.0, 
-          "heightpos": 75.0, 
+          },
+          "id": 1501,
+          "toppos": 210.0,
+          "heightpos": 75.0,
           "speakers": [
             {
-              "lastmodified": "2015-08-17T18:04:24.018834", 
-              "fullname": "Speaker 2", 
-              "company": "Company 2", 
-              "abstract": "Speaker Abstract Number 2.", 
+              "lastmodified": "2015-08-17T18:04:24.018834",
+              "fullname": "Speaker 2",
+              "company": "Company 2",
+              "abstract": "Speaker Abstract Number 2.",
               "twittername": ""
             }
-          ], 
+          ],
           "room": {
-            "roomname": "Room 1", 
+            "roomname": "Room 1",
             "sortkey": 100
-          }, 
-          "title": "Talk Number 2", 
-          "leftpos": 0, 
-          "length": 50.0, 
-          "timeslot": "10:30 - 11:20", 
+          },
+          "title": "Talk Number 2",
+          "leftpos": 0,
+          "length": 50.0,
+          "timeslot": "10:30 - 11:20",
           "widthpos": 598
         }
       ]
