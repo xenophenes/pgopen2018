@@ -41,7 +41,7 @@
 	    "largelogo": "vc-logo-horizontal_071115.png",
 	    "badgelogo": "vc-logo-horizontal_071115.png",
 	    "link": "https://www.vividcortex.com/",
-	    "intro": "VividCortex"
+	    "intro": "VividCortex is the best way to improve your database performance, efficiency, and uptime. It is a secure, cloud-hosted platform that eliminates your most critical visibility gap, providing deep insights into production database workload and query performance. It measures the performance and resource consumption of every statement and transaction, then uses patented algorithms to analyze and surface relevant insights, so you can proactively fix future performance problems before they impact customers. To learn more, visit <a href=\"http://www.vividcortex.com\">www.vividcortex.com</a> or follow us on Twitter @VividCortex."
 	},
 	{
 	    "name": "Amazon Web Services",
