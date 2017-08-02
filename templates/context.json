@@ -5,6 +5,14 @@
     "conference": "PostgresOpen 2017",
 
     "diamond": [
+  {
+      "name": "Microsoft",
+      "logo": "microsoft.png",
+      "largelogo": "microsoft.png",
+      "badgelogo": "microsoft_print.png",
+      "link": "https://www.microsoft.com/en-us/",
+      "intro": "Microsoft"
+  },
 	{
 	    "name": "2ndQuadrant",
 	    "logo": "2ndQ_logo.png",
