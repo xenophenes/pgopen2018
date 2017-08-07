@@ -66,7 +66,15 @@
 	    "badgelogo": "dd_logo_v_cmyk.png",
 	    "link": "https://www.datadoghq.com/",
 	    "intro": "Datadog is a SaaS-based monitoring and analytics platform for large-scale applications and infrastructure. Combining real-time metrics from servers, containers, databases, and applications with end-to-end tracing, Datadog delivers actionable alerts and powerful visualizations to provide full-stack observability. Datadog includes over 200 vendor-supported integrations and APM libraries for several languages."
-	}
+	},
+  {
+    "name": "Enterprise DB",
+    "logo": "edb-logo.jpg",
+    "largelogo": "edb-logo.jpg",
+    "badgelogo": "edb-logo.jpg",
+    "link": "https://www.edbpostgres.com/",
+    "intro": "Enterprise DB"
+  }
     ],
 
     "silver": [
