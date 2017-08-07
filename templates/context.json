@@ -27,7 +27,7 @@
       "largelogo": "microsoft.png",
       "badgelogo": "microsoft_print.png",
       "link": "https://azure.microsoft.com/en-us/services/postgresql/",
-      "intro": "Microsoft"
+      "intro": "Microsoft's mission is to empower every person and every organization on the planet to achieve more. With its Data & AI solutions, Microsoft enables developers to easily build and deliver intelligent apps by offering productive and familiar tools to integrate data and built-in AI. To offer more choice and flexibility to developers, Microsoft has now introduced Azure Database for PostgreSQL, a PaaS offering for PostgreSQL. Learn more at <a href=\"www.microsoft.com/PostgreSQL.\">www.microsoft.com/PostgreSQL</a>."
   }
     ],
 
