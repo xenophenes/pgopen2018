@@ -74,6 +74,14 @@
     "badgelogo": "edb_logo.png",
     "link": "https://www.edbpostgres.com/",
     "intro": "EnterpriseDB® (EDB™), the database platform company for digital business, delivers the premier open source-based data platform for new applications, cloud re-platforming, application modernization, and legacy migration. EnterpriseDB integrates with enterprise technologies and infrastructures for hybrid cloud management, data integration, and data warehousing. Our customers benefit from the most reliable, high-performing, flexible, open, and cost-effective data management platform available. EnterpriseDB is based in Bedford, Massachusetts with offices around the globe. For more information, visit www.EDBPostgres.com."
+  },
+  {
+      "name": "Crunchy Data",
+      "logo": "crunchy_data.png",
+      "largelogo": "crunchy_data.png",
+      "badgelogo": "crunchy_data.png",
+      "link": "https://www.crunchydata.com/",
+      "intro": "Crunchy Data"
   }
     ],
 
