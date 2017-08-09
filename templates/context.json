@@ -81,7 +81,7 @@
       "largelogo": "crunchy_data.png",
       "badgelogo": "crunchy_data.png",
       "link": "https://www.crunchydata.com/",
-      "intro": "Crunchy Data"
+      "intro": "Crunchy Data is a leading provider of trusted open source PostgreSQL and enterprise PostgreSQL technology, support and training.  Crunchy Data offers Crunchy Certified PostgreSQL, the most advanced pure open source RDBMS on the market and the first open source RDBMS to achieve Common Criteria certification. Crunchy Data is a leading provider of Cloud Native PostgreSQL – providing open source, cloud agnostic PostgreSQL-as-a-Service solutions. PostgreSQL’s active development community, proven architecture and reputation for reliability, data integrity, and ease of use make it a prime candidate for enterprises looking for a robust relational database alternative to expensive proprietary database technologies."
   }
     ],
 
