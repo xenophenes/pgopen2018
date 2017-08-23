@@ -48,16 +48,17 @@
 <div class="row text-center">
 {% endif %}
   <div class="col-md-6 col-md-4">
-	<!-- Gold -->
+	<!-- Gold {{ loop.index }} of {{ loop.length }} -->
 		<a href="{{p.link}}" target="_blank"><img id="sponsors" src="{{media("images/" + p.largelogo)}}" alt="{{p.name}}"></a>
 		<div class="caption">
 			<small><em>{{p.intro}}</em></small>
 		</div>
 	</div>
-{% if loop.index0 is divisibleby 3 %}
+{% if loop.index is divisibleby 3 %}
 </div>
 {% endif %}
 {% endfor %}
+</div>
 <hr>
 
 <h3>Silver</h3>
