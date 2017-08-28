@@ -136,7 +136,15 @@
 	    "badgelogo": "Pandora_Wordmark_RGB.png",
 	    "link": "https://www.pandora.com/",
 	    "intro": "Pandora"
-	}
+	},
+	{
+	    "name": "Google",
+	    "logo": "google.png",
+	    "largelogo": "google.png",
+	    "badgelogo": "google.png",
+	    "link": "cloud.google.com",
+	    "intro": "Google Cloud Platform"
+	}  
     ],
     "partner": [
       {
