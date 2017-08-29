@@ -142,7 +142,7 @@
 	    "logo": "google.png",
 	    "largelogo": "google.png",
 	    "badgelogo": "google.png",
-	    "link": "cloud.google.com",
+	    "link": "https://cloud.google.com",
 	    "intro": "Google Cloud Platform"
 	}  
     ],
