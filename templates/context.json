@@ -19,7 +19,7 @@
 	    "largelogo": "citusdata.png",
 	    "badgelogo": "citusdata.png",
 	    "link": "https://www.citusdata.com/",
-	    "intro": "Citus is worry-free Postgres for SaaS. Made to scale out, Citus is an extension to Postgres (not a fork) that distributes queries across any number of servers. Whether you have a multi-tenant app that needs scale, or you need to deliver real-time analytics to customers, with Citus you can focus on your app—not your database.<br><br>At Citus Data, we make it simple to shard PostgreSQL. Available as a fully-managed database as a service on AWS, as on-prem software, and as open source."
+	    "intro": "Citus is worry-free Postgres for SaaS. Made to scale out, Citus is an extension to Postgres (not a fork) that distributes queries across any number of servers. Whether you have a multi-tenant app that needs scale, or you need to deliver real-time analytics to customers, with Citus you can focus on your app—not your database.<br><br>At Citus Data, we make it simple to shard PostgreSQL. Available as a fully-managed database as a service on AWS, as on-prem software, and as open source. Learn more at <a href=\"https://www.citusdata.com\">www.citusdata.com</a>."
 	},
   {
       "name": "Microsoft",
@@ -136,7 +136,15 @@
 	    "badgelogo": "Pandora_Wordmark_RGB.png",
 	    "link": "https://www.pandora.com/",
 	    "intro": "Pandora"
-	}
+	},
+	{
+	    "name": "Google",
+	    "logo": "google.png",
+	    "largelogo": "google.png",
+	    "badgelogo": "google.png",
+	    "link": "https://cloud.google.com",
+	    "intro": "Google Cloud Platform"
+	}  
     ],
     "partner": [
       {
@@ -161,7 +169,7 @@
     "title": "Announcing Keynote Guest: Paul Vixie to PostgresOpen SV",
     "sponsorname": "PostgresOpen",
     "posttime": "2017-08-25",
-      "content":"We are thrilled to announce that <a href=\"https://en.wikipedia.org/wiki/Paul_Vixie\">Dr. Paul Vixie</a>, CEO of Farsight Security, Internet Hall of Fame Innovator, and one of the primary individuals responsible for the one of the largest, most distributed and used databases in the world, the Domain Name System (DNS), will be our Guest Keynote speaker this year! <br/><br/>Paul in helping create one of the most key databases in the world: DNS which is a key backbone to the internet brings an interesting perspective on both data and open source. We're excited to hear from Paul and learn from his insights in addition to our other keynote speakers from the likes of: <a href=\"http://www.2ndquadrant.com\">2ndQuadrant</a>, <a href=\"https://www.citusdata.com\">Citus Data</a>, <a href=\"https://azure.microsoft.com/en-us/services/postgresql/\">Microsoft</a>. <br/><br/>If you're still thinking of joining us there make sure to grab one of the few <a href=\"https://2017.postgresopen.org/tickets/\">remaining tickets</a> before they're out."
+      "content":"We are thrilled to announce that <a href=\"https://en.wikipedia.org/wiki/Paul_Vixie\">Dr. Paul Vixie</a>, CEO of Farsight Security, Internet Hall of Fame Innovator, and one of the primary individuals responsible for the one of the largest, most distributed and used databases in the world, the Domain Name System (DNS), will be our Guest Keynote speaker this year! <br/><br/>Paul helped create one of the most important databases in the world: DNS, a key backbone technology for the ongoing operation of the Internet and he brings an interesting perspective on both data and open source. We're excited to hear from Paul and learn from his insights in addition to our other keynote speakers from: <a href=\"http://www.2ndquadrant.com\">2ndQuadrant</a>, <a href=\"https://www.citusdata.com\">Citus Data</a>, and <a href=\"https://azure.microsoft.com/en-us/services/postgresql/\">Microsoft</a>. <br/><br/>If you're still thinking of joining us there make sure to grab one of the few <a href=\"https://2017.postgresopen.org/tickets/\">remaining tickets</a> before they're sold out."
     },
     {
     "title": "An interview with Heroku on Postgres",
