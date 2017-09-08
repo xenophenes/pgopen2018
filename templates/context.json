@@ -57,7 +57,7 @@
 	    "largelogo": "amazon-web-services.gif",
 	    "badgelogo": "amazon-web-services.gif",
 	    "link": "https://aws.amazon.com/",
-	    "intro": "Amazon Web Services"
+	    "intro": "Amazon Relational Database Service (Amazon RDS) makes it easy to set up, operate, and scale a relational database in the cloud. It provides cost-efficient and resizable capacity while automating time-consuming administration tasks such as hardware provisioning, database setup, patching and backups. It offers seven database engines to choose from, including <a href=\"https://aws.amazon.com/rds/postgresql/\">Amazon RDS for PostgreSQL</a> and <a href=\"https://aws.amazon.com/rds/aurora/\">Amazon Aurora PostgreSQL</a>, a PostgreSQL-compatible database that provides a compelling migration target for high-end commercial databases. Learn more at <a href=\"https://aws.amazon.com/rds/aurora/\">aws.amazon.com/rds/</a> and follow us at <a href=\"https://twitter.com/awscloud\">@AWSCloud</a>."
 	},
 	{
 	    "name": "Datadog",
