@@ -1,18 +1,14 @@
-{%macro media(url)%}{{mediabase|default("/")}}static/{%if githash%}{{githash}}/{%endif%}{{url}}{%endmacro-%}
-{%macro link(url)%}{{linkbase|default("/")}}{{url}}{%endmacro-%}
-{%macro menulink(subpage,title,magic)%}<li{%if page==subpage or (pagemagic and pagemagic==magic)%} class="active"{%endif%}><a href="{{link(subpage + "/")}}">{{title}}</a></li>{%endmacro-%}
 <!DOCTYPE html>
 <html lang="en">
 	<head>
 		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 		<meta name="description" content="PostgresOpen SV 2017" />
 		<meta name="keywords" content="PostgreSQL" />
 		<meta name="author" content="United States PostgreSQL Association" />
 		<meta name="google-site-verification" content="blxbviCSHoY6wxZrtoL4ZEvpdICZTrsIFx0VYEVHbuc" />
 
 
-		<title>{%block title%}PostgresOpen 2017{%endblock%}</title>
+		<title>Blog | PostgresOpen 2017</title>
 
 		<!-- Twitter Meta Tags -->
 		<meta name="twitter:card" content="summary_large_image">
@@ -48,11 +44,11 @@
 		}
 		</script>
 
-		<script src="{{media("js/jquery.min.js")}}"></script>
+		<script src="https://2017.postgresopen.org/static/js/jquery.min.js"></script>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-		<script src="{{media("js/jquery.matchHeight-min.js")}}"></script>
+		<script src="https://2017.postgresopen.org/static/js/jquery.matchHeight-min.js"></script>
 		<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
-		<link href="{{media("css/style.css")}}" rel="stylesheet">
+		<link href="https://2017.postgresopen.org/static/css/style.css" rel="stylesheet">
 
 		<script>
 			(function($) {
@@ -75,9 +71,9 @@
 		  ga('create', 'UA-76808262-1', 'auto');
 		  ga('send', 'pageview');
 		</script>
-		{%block extrahead%}{%endblock%}
+		
 	</head>
-	<body class="{{page}}">
+	<body class="blog">
 
 		<!-- Header -->
 			<nav id="header" class="navbar navbar-fixed-top">
@@ -87,28 +83,38 @@
 						<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false">
 							<i class="fa fa-bars"></i>
 						</button>
-						<a class="navbar-brand" href="{{link("")}}">
-							<img id="logo" src="{{media("images/sv_elephant.png")}}" alt="PostgresOpen Logo">
+						<a class="navbar-brand" href="https://2017.postgresopen.org/">
+							<img id="logo" src="https://2017.postgresopen.org/static/images/sv_elephant.png" alt="PostgresOpen Logo">
 							<h1 class="heading">PostgresOpen SV 2017</h1>
 						</a>
 					</div>
 					<!-- Collect the nav links, forms, and other content for toggling -->
 					<div id="navbar" class="collapse navbar-collapse">
 						<ul class="nav navbar-nav navbar-right">
-							<li><a href="{{link("")}}">Home</a></li>
-							{{menulink("about", "About")}}
-							{{menulink("blog", "Blog")}}
+							<li><a href="https://2017.postgresopen.org/">Home</a></li>
+							<li><a href="https://2017.postgresopen.org/about/">About</a></li>
+							<li class="active"><a href="https://2017.postgresopen.org/blog/">Blog</a></li>
 							<li><a href="https://postgresql.us/events/schedule/pgopen2017/">Schedule</a></li>
-							{{menulink("tickets", "Registration")}}
-							{{menulink("venue", "Venue & Hotel")}}
-							{{menulink("sponsors", "Sponsors")}}
+							<li><a href="https://2017.postgresopen.org/tickets/">Registration</a></li>
+							<li><a href="https://2017.postgresopen.org/venue/">Venue & Hotel</a></li>
+							<li><a href="https://2017.postgresopen.org/sponsors/">Sponsors</a></li>
 						</ul>
 					</div><!-- /.navbar-collapse -->
 				</div><!-- /.container-fluid -->
 			</nav>
       <section id="main" class="wrapper">
 				<div class="container">
-      		{%block content%}{%endblock%}
+      		
+<!-- Main -->
+<h1>Blog</h1>
+<hr>
+
+  <!-- Sponsorship -->
+  <h3>An interview with Microsoft: Adding Postgres to Azure and joining the Postgres community</h3>
+  <h4>Posted By: PostgresOpen on Wednesday, September 06</h4>
+  <p>As our conference kicks off tomorrow we're looking forward to all the great talks and conversation about all things Postgres. To wet your appetite we took the chance to sit down with another of our Diamond sponsors, Microsoft, who recently added support for Postgres to Azure. Give a read to see how they approach Postgres and the community.<br/><br/><b>PostgresOpen SV:</b> Microsoft has long been known for SQL server, but recently added PostgreSQL to the ranks for Azure. Can you tell us a little more on the background of how PostgreSQL came to be part of the ranks for Azure?<br/><br/><b>Rohan Kumar:</b>Microsoft’s mission is to enable every person and every organization on the planet to achieve more. To make this mission meaningful for our customers, we intend to meet them where they are, helping them to be productive with the technologies and tools of their choice. PostgreSQL has a strong community and is one of the most loved open source databases, bringing industry leading innovations to customers. As we move towards offering customers more choice, bringing PostgreSQL as a fully managed service on Azure was a natural step for us.<br/><br/><b>PostgresOpen SV:</b>Microsoft has made a lot more commitments to open source in recent years. PostgreSQL of course has a long history as an open source database, how do you see Microsoft contributing and engaging with that community in the future?<br/><br/><b>Rohan Kumar:</b> We are excited to be working with PostgreSQL community. We would love to partner with the community to bring our experience, from building SQL Server over the years, to PostgreSQL – and to learn in areas where PostgreSQL excels. We have already engaged on pgsql-hackers mailing list and working with the community on patches. Moving forward, we will continue to contribute back and partner with the community in the service of our customers. As we look forward, the possibilities of what we can work together on are amazing.<br/><br/><b>PostgresOpen SV:</b> While PostgreSQL is newer to Microsoft, databases are certainly not new having a long history with SQL Server which is also a very solid database. How do you expect all of your learnings over the years with SQL Server to apply and support PostgreSQL?<br/><br/><b>Rohan Kumar:</b> As mentioned above, we would love to share our learnings from working on SQL Server with the PostgreSQL community. While there are many areas that we can work on together with the community, a couple of areas to highlight would be connectivity for the cloud and making PostgreSQL more robust and compatible in Windows development environment.<br/><br/><b>PostgresOpen SV:</b> For those looking to get started with PostgreSQL on Azure, where should they start?<br/><br/><b>Rohan Kumar:</b> The best way to get started with Azure Database for PostgreSQL is to visit our <a href="https://docs.microsoft.com/en-us/azure/postgresql/">documentation page</a> where you can find 5-minute quickstarts, step-by-step tutorials and samples. If you are ready to go, you can start using the $200 free credit when you create a <a href="https://azure.microsoft.com/en-us/free/">free account with Azure.</a><br/><br/></p>
+  <hr>
+
         </div>
       </section>
 
