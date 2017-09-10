@@ -1343,3 +1343,7 @@
 	.navbar-fixed-top {
 		background-color: #0A2342;
 	}
+
+table#feedback_table ul {
+    list-style-type: none !important;
+}
