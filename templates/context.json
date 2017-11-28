@@ -2,7 +2,7 @@
     "linkbase": "https://2018.postgresopen.org/",
     "mediabase": "https://2018.postgresopen.org/",
 
-    "conference": "PostgresOpen 2018",
+    "conference": "PostgresOpen SV 2018",
 
     "diamond": [
 	{
@@ -177,7 +177,7 @@
     {
       "color": "#859900",
       "incfp": true,
-      "trackname": "PostgresOpen 2018",
+      "trackname": "PostgresOpen SV 2018",
       "sortkey": 100
     },
     {
@@ -236,7 +236,7 @@
               "track": {
                 "color": "#859900",
                 "incfp": true,
-                "trackname": "PostgresOpen 2018",
+                "trackname": "PostgresOpen SV 2018",
                 "sortkey": 100
               },
               "id": 1458,
@@ -282,7 +282,7 @@
               "track": {
                 "color": "#859900",
                 "incfp": true,
-                "trackname": "PostgresOpen 2018",
+                "trackname": "PostgresOpen SV 2018",
                 "sortkey": 100
               },
               "id": 1501,
