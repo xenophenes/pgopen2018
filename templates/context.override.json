@@ -1,0 +1,430 @@
+{
+    "linkbase": "/home/sarah/Websites/2018.postgresopen.org/",
+    "mediabase": "/home/sarah/Websites/2018.postgresopen.org/",
+    "githash": "",
+
+    "conference": "PostgresOpen SV 2018",
+
+    "diamond": [
+	{
+	    "name": "2ndQuadrant",
+	    "logo": "2ndQ_logo.png",
+	    "largelogo": "2ndQ_logo.png",
+	    "badgelogo": "2ndQ_logo.png",
+	    "link": "https://www.2ndquadrant.com/",
+	    "intro": "As the Gold Standard worldwide for everything PostgreSQL, 2ndQuadrant consistently contributes enterprise features to enhance performance, scalability, security, and stability in PostgreSQL.  Spanning 22 countries and 5 continents, 2ndQuadrant is the largest single collective organization of PostgreSQL experts of any company globally.  Our PostgreSQL experts are the developers of popular tools such as:<ul><li>Postgres-BDR- Multi-master replication for geographically distributed clusters</li><li>pglogical - Fully integrated extension for logical replication</li><li>Postgres-XL - Horizontally Scalable, Massively Parallel Database with flexibility to handle OLAP & OLTP workloads</li><li>repmgr - Automatic failover management tool for configuring High Availability environments</li><li>Barman - Backup Manager and Disaster Recovery Tool for PostgreSQL</li></ul>In addition to developing these tools, our PostgreSQL experts provide 24/7 Production Support, Oracle migration services, Remote DBA support, PostgreSQL Consulting, and Training."
+	},
+	{
+	    "name": "Citus Data",
+	    "logo": "citusdata.png",
+	    "largelogo": "citusdata.png",
+	    "badgelogo": "citusdata.png",
+	    "link": "https://www.citusdata.com/",
+	    "intro": "Citus is worry-free Postgres for SaaS. Made to scale out, Citus is an extension to Postgres (not a fork) that distributes queries across any number of servers. Whether you have a multi-tenant app that needs scale, or you need to deliver real-time analytics to customers, with Citus you can focus on your app—not your database.<br><br>At Citus Data, we make it simple to shard PostgreSQL. Available as a fully-managed database as a service on AWS, as on-prem software, and as open source. Learn more at <a href=\"https://www.citusdata.com\">www.citusdata.com</a>."
+	},
+  {
+      "name": "Microsoft",
+      "logo": "microsoft.png",
+      "largelogo": "microsoft.png",
+      "badgelogo": "microsoft_print.png",
+      "link": "https://azure.microsoft.com/en-us/services/postgresql/",
+      "intro": "Microsoft's mission is to empower every person and every organization on the planet to achieve more. With its Data & AI solutions, Microsoft enables developers to easily build and deliver intelligent apps by offering productive and familiar tools to integrate data and built-in AI. To offer more choice and flexibility to developers, Microsoft has now introduced Azure Database for PostgreSQL, a PaaS offering for PostgreSQL. Learn more at <a href=\"https://www.microsoft.com/PostgreSQL\">www.microsoft.com/PostgreSQL</a>."
+  }
+    ],
+
+    "platinum": [
+      {
+        "name": "Heroku",
+  	    "logo": "heroku.svg",
+  	    "largelogo": "heroku.svg",
+  	    "badgelogo": "heroku.svg",
+  	    "link": "https://www.heroku.com/",
+  	    "intro": "Heroku, a Salesforce company and industry pioneer in platform as a service (PaaS), enables developers to build and run applications entirely in the cloud, without the need to purchase or maintain any servers or software. Over 8 million apps, including ones from Product Hunt, Casper and Citrix run on Heroku. With support for the most popular languages such as Ruby and Node.js, high-scale data services including Postgres, Redis and Kafka, and an add-ons ecosystem featuring over 150 cloud application services, Heroku provides companies from startups to Fortune 500 enterprises with a faster and more effective way to create, deploy and manage beautiful apps in the cloud."
+      }
+    ],
+
+    "gold": [
+	{
+	    "name": "VividCortex",
+	    "logo": "vc-logo-horizontal_071115.png",
+	    "largelogo": "vc-logo-horizontal_071115.png",
+	    "badgelogo": "vc-logo-horizontal_071115.png",
+	    "link": "https://www.vividcortex.com/",
+	    "intro": "VividCortex is the best way to improve your database performance, efficiency, and uptime. It is a secure, cloud-hosted platform that eliminates your most critical visibility gap, providing deep insights into production database workload and query performance. It measures the performance and resource consumption of every statement and transaction, then uses patented algorithms to analyze and surface relevant insights, so you can proactively fix future performance problems before they impact customers. To learn more, visit <a href=\"http://www.vividcortex.com\">www.vividcortex.com</a> or follow us on Twitter @VividCortex."
+	},
+	{
+	    "name": "Amazon Web Services",
+	    "logo": "amazon-web-services.gif",
+	    "largelogo": "amazon-web-services.gif",
+	    "badgelogo": "amazon-web-services.gif",
+	    "link": "https://aws.amazon.com/",
+	    "intro": "Amazon Relational Database Service (Amazon RDS) makes it easy to set up, operate, and scale a relational database in the cloud. It provides cost-efficient and resizable capacity while automating time-consuming administration tasks such as hardware provisioning, database setup, patching and backups. It offers seven database engines to choose from, including <a href=\"https://aws.amazon.com/rds/postgresql/\">Amazon RDS for PostgreSQL</a> and <a href=\"https://aws.amazon.com/rds/aurora/\">Amazon Aurora PostgreSQL</a>, a PostgreSQL-compatible database that provides a compelling migration target for high-end commercial databases. Learn more at <a href=\"https://aws.amazon.com/rds/aurora/\">aws.amazon.com/rds/</a> and follow us at <a href=\"https://twitter.com/awscloud\">@AWSCloud</a>."
+	},
+	{
+	    "name": "Datadog",
+	    "logo": "dd_logo_v_cmyk.png",
+	    "largelogo": "dd_logo_v_cmyk.png",
+	    "badgelogo": "dd_logo_v_cmyk.png",
+	    "link": "https://www.datadoghq.com/",
+	    "intro": "Datadog is a SaaS-based monitoring and analytics platform for large-scale applications and infrastructure. Combining real-time metrics from servers, containers, databases, and applications with end-to-end tracing, Datadog delivers actionable alerts and powerful visualizations to provide full-stack observability. Datadog includes over 200 vendor-supported integrations and APM libraries for several languages."
+	},
+  {
+    "name": "Enterprise DB",
+    "logo": "edb_logo.png",
+    "largelogo": "edb_logo.png",
+    "badgelogo": "edb_logo.png",
+    "link": "https://www.edbpostgres.com/",
+    "intro": "EnterpriseDB® (EDB™), the database platform company for digital business, delivers the premier open source-based data platform for new applications, cloud re-platforming, application modernization, and legacy migration. EnterpriseDB integrates with enterprise technologies and infrastructures for hybrid cloud management, data integration, and data warehousing. Our customers benefit from the most reliable, high-performing, flexible, open, and cost-effective data management platform available. EnterpriseDB is based in Bedford, Massachusetts with offices around the globe. For more information, visit www.EDBPostgres.com."
+  },
+  {
+      "name": "Crunchy Data",
+      "logo": "crunchy_data.png",
+      "largelogo": "crunchy_data.png",
+      "badgelogo": "crunchy_data.png",
+      "link": "https://www.crunchydata.com/",
+      "intro": "Crunchy Data is a leading provider of trusted open source PostgreSQL and enterprise PostgreSQL technology, support and training.  Crunchy Data offers Crunchy Certified PostgreSQL, the most advanced pure open source RDBMS on the market and the first open source RDBMS to achieve Common Criteria certification. Crunchy Data is a leading provider of Cloud Native PostgreSQL – providing open source, cloud agnostic PostgreSQL-as-a-Service solutions. PostgreSQL’s active development community, proven architecture and reputation for reliability, data integrity, and ease of use make it a prime candidate for enterprises looking for a robust relational database alternative to expensive proprietary database technologies."
+  }
+    ],
+
+    "silver": [
+	{
+	    "name": "Cybertec",
+	    "logo": "Cybertec_Logo_2017_1024px_slogan.jpg",
+	    "largelogo": "Cybertec_Logo_2017_1024px_slogan.jpg",
+	    "badgelogo": "Cybertec_Logo_2017_1024px_slogan.jpg",
+	    "link": "https://www.cybertec.at/",
+	    "intro": "Cybertec"
+	},
+	{
+	    "name": "data egret",
+	    "logo": "DE_logo_horizontal.png",
+	    "largelogo": "DE_logo_horizontal.png",
+	    "badgelogo": "DE_logo_horizontal.png",
+	    "link": "http://dataegret.com/",
+	    "intro": "data egret"
+	},
+  {
+      "name": "opentable",
+      "logo": "opentable.png",
+      "largelogo": "opentable.svg",
+      "badgelogo": "opentable.eps",
+      "link": "https://www.opentable.com/start/home",
+      "intro": "opentable"
+  }
+    ],
+
+    "supporter": [
+	{
+	    "name": "JackDB",
+	    "logo": "jackdb-logomark-700x200.png",
+	    "largelogo": "jackdb-logomark-700x200.png",
+	    "badgelogo": "jackdb-logomark-700x200.png",
+	    "link": "https://www.jackdb.com/",
+	    "intro": "JackDB"
+	},
+	{
+	    "name": "PostgreSQL Experts",
+	    "logo": "pg_exp.png",
+	    "largelogo": "pg_exp.png",
+	    "badgelogo": "pg_exp.png",
+	    "link": "https://www.pgexperts.com/",
+	    "intro": "PostgreSQL Experts"
+	},
+	{
+	    "name": "Pandora",
+	    "logo": "Pandora_Wordmark_RGB.png",
+	    "largelogo": "Pandora_Wordmark_RGB.png",
+	    "badgelogo": "Pandora_Wordmark_RGB.png",
+	    "link": "https://www.pandora.com/",
+	    "intro": "Pandora"
+	},
+	{
+	    "name": "Google",
+	    "logo": "google.png",
+	    "largelogo": "google.png",
+	    "badgelogo": "google.png",
+	    "link": "https://cloud.google.com",
+	    "intro": "Google Cloud Platform"
+	}
+    ],
+    "partner": [
+      {
+        "name": "PostgreSQL US",
+        "logo": "pgus.png",
+        "largelogo": "pgus.png",
+        "badgelogo": "pgus.png",
+        "link": "https://postgresql.us/associatedprojects/",
+        "intro": "PostgreSQL US"
+      },
+      {
+        "name": "Foss4G",
+        "logo": "foss4g.png",
+        "largelogo": "foss4g.png",
+        "badgelogo": "foss4g.png",
+        "link": "http://2017.foss4g.org/community-partner/",
+        "intro": "Foss4G"
+      }
+    ],
+	"blogposts": [
+    {
+    "title": "An interview with Citus Data: Scaling out Postgres",
+    "sponsorname": "PostgresOpen",
+    "posttime": "2017-09-13",
+      "content":"We just wrapped up a great several days with many from the Postgres community. But, just because the conference is over doesn't mean it all has to come to an end. In coming weeks, we'll have videos from the talks up, and we are already starting our preparations for next year.<br/><br/>But first, we took a chance at the conference to sit down with our other Diamond sponsor <a href=\"https://www.citusdata.com/\">Citus Data</a> to learn a bit more about them and get a better sense of why they think Postgres is so important.<br/><br/><b>PostgresOpen SV:</b> Can you start by giving us a quick overview of what Citus does?<br/><br/><b>Craig Kerstiens:</b> Citus is an extension to Postgres that makes it easy for you to scale out. We do this by sharding your data seamlessly under the covers and distributing your data across many nodes. Scaling out gives the database more memory, more compute, and more storage — oh, and we can parallelize the SQL, too—and as a result, your application gets a lot more performance. At the same time, to your app, Citus still looks like a standard single node Postgres database. And we've made Citus available as open source, as enterprise software, and as a fully-managed database as a service.<br/><br/><b>PostgresOpen SV:</b> Citus has been around for over five years now, but it seems you're moving a lot faster now. Has something changed or can you share a bit on that progress?<br/><br/><b>Craig Kerstiens:</b> It turns out building a distributed database takes time. I'd venture to say that building a robust solid database takes between 10-20 years. By leveraging Postgres, we were able to shave a good bit of that time off, and we've been rapidly innovating on Citus so it works just as you'd expect Postgres to work, only: distributed. The uptick you’ve seen from Citus over the last year is probably the result of a bunch of different things: First, we open sourced Citus, which has made our technology available to so many more people. Second, because we made Citus available as a fully-managed database as a service, we’ve been able to connect with a lot of customers who quite frankly would like to forget about their database, and focus instead on their application. And third, the team. The distributed systems experience we have from engineers that were early Amazon.com and AWS engineers coupled with many of us on the database as a service side of things that helped build and scale Heroku Postgres lets us consolidate that expertise then give it right back to our customers which creates a nice cycle.<br/><br/><b>PostgresOpen SV:</b> I noticed at the conference you talked a lot about multi-tenant and SaaS apps, what's unique or different about those type of apps?<br/><br/><b>Craig Kerstiens:</b> When it comes to sharding, there are a lot of different opinions out there on <a href=\"https://www.citusdata.com/blog/2017/08/09/principles-of-sharding-for-relational-databases/\">how hard or easy it is</a>. And most of those opinions are right in their own way, the reality is that your <a href=\"https://www.citusdata.com/blog/2017/08/28/five-data-models-for-sharding/\">data model</a> has a lot to do with what type of sharding is right for you and your application. The good news for the SaaS applications out there is that many of them have a multi-tenant data model, and it turns out the way we scale out Postgres works really well for these multi tenant apps. <br/><br/><b>PostgresOpen SV:</b> What’s next for Citus?<br/><br/><b>Craig Kerstiens:</b> More Postgres, more scale, more features. There are a ton of options ahead for us, but the key theme is that we want to let you get back to building your app and not worrying about the database and putting out fires. We’ve consistently heard from customers after migrating that they have not thought/worried about their database after migrating whereas before it was a constant area of pain. We want to keep making that experience easier to come to, and give you the tools to work more flexibly with your data."
+    }
+     ],
+
+    "tracks": [
+    {
+      "color": "#859900",
+      "incfp": true,
+      "trackname": "PostgresOpen SV 2018",
+      "sortkey": 100
+    },
+    {
+      "color": "#FFFFEE",
+      "incfp": false,
+      "trackname": "Breaks",
+      "sortkey": 120
+    }
+    ],
+
+    "days": [
+    {
+      "schedule_height": 872.0,
+      "schedule_width": 600,
+      "day": "2017-03-21",
+      "rooms": [
+        {
+          "heightpos": 28,
+          "name": "Drottningholm",
+          "sessions": [
+            {
+              "leftpos": 0,
+              "heightpos": 43.0,
+              "length": 30.0,
+              "room": null,
+              "title": "Registration",
+              "track": {
+                "color": "#FFFFEE",
+                "incfp": false,
+                "trackname": "Breaks",
+                "sortkey": 120
+              },
+              "cross_schedule": true,
+              "timeslot": "08:30 - 09:00",
+              "widthpos": 598,
+              "toppos": 30.0
+            },
+            {
+              "leftpos": 0,
+              "heightpos": 20.5,
+              "length": 15.0,
+              "room": null,
+              "title": "Welcome and Opening",
+              "track": {
+                "color": "#FFFFEE",
+                "incfp": false,
+                "trackname": "Breaks",
+                "sortkey": 120
+              },
+              "cross_schedule": true,
+              "timeslot": "09:00 - 09:15",
+              "widthpos": 598,
+              "toppos": 75.0
+            },
+            {
+              "track": {
+                "color": "#859900",
+                "incfp": true,
+                "trackname": "PostgresOpen SV 2018",
+                "sortkey": 100
+              },
+              "id": 1458,
+              "toppos": 97.5,
+              "heightpos": 75.0,
+              "speakers": [
+                {
+                  "lastmodified": "2016-12-22T08:43:39.872159",
+                  "fullname": "Speaker 1",
+                  "company": "Company 1",
+                  "abstract": "Speaker Abstract Number 1.",
+                  "twittername": ""
+                }
+              ],
+              "room": {
+                "roomname": "Room 1",
+                "sortkey": 100
+              },
+              "title": "Talk Number 1",
+              "leftpos": 0,
+              "length": 50.0,
+              "timeslot": "09:15 - 10:05",
+              "widthpos": 598
+            },
+            {
+              "leftpos": 0,
+              "heightpos": 35.5,
+              "length": 25.0,
+              "room": null,
+              "title": "Coffee",
+              "track": {
+                "color": "#FFFFEE",
+                "incfp": false,
+                "trackname": "Breaks",
+                "sortkey": 120
+              },
+              "cross_schedule": true,
+              "timeslot": "10:05 - 10:30",
+              "widthpos": 598,
+              "toppos": 172.5
+            },
+            {
+              "track": {
+                "color": "#859900",
+                "incfp": true,
+                "trackname": "PostgresOpen SV 2018",
+                "sortkey": 100
+              },
+              "id": 1501,
+              "toppos": 210.0,
+              "heightpos": 75.0,
+              "speakers": [
+                {
+                  "lastmodified": "2015-08-17T18:04:24.018834",
+                  "fullname": "Speaker 2",
+                  "company": "Company 2",
+                  "abstract": "Speaker Abstract Number 2.",
+                  "twittername": ""
+                }
+              ],
+              "room": {
+                "roomname": "Room 1",
+                "sortkey": 100
+              },
+              "title": "Talk Number 2",
+              "leftpos": 0,
+              "length": 50.0,
+              "timeslot": "10:30 - 11:20",
+              "widthpos": 598
+            }
+          ],
+          "leftpos": 0,
+          "widthpos": 598,
+          "id": 70
+        }
+      ],
+      "sessions": [
+        {
+          "leftpos": 0,
+          "heightpos": 43.0,
+          "length": 30.0,
+          "room": null,
+          "title": "Registration",
+          "track": {
+            "color": "#FFFFEE",
+            "incfp": false,
+            "trackname": "Breaks",
+            "sortkey": 120
+          },
+          "cross_schedule": true,
+          "timeslot": "08:30 - 09:00",
+          "widthpos": 598,
+          "toppos": 30.0
+        },
+        {
+          "leftpos": 0,
+          "heightpos": 20.5,
+          "length": 15.0,
+          "room": null,
+          "title": "Welcome and Opening",
+          "track": {
+            "color": "#FFFFEE",
+            "incfp": false,
+            "trackname": "Breaks",
+            "sortkey": 120
+          },
+          "cross_schedule": true,
+          "timeslot": "09:00 - 09:15",
+          "widthpos": 598,
+          "toppos": 75.0
+        },
+        {
+          "track": {
+            "color": "#859900",
+            "incfp": true,
+            "trackname": "PostgresOpen 2017",
+            "sortkey": 100
+          },
+          "id": 1458,
+          "toppos": 97.5,
+          "heightpos": 75.0,
+          "speakers": [
+            {
+              "lastmodified": "2016-12-22T08:43:39.872159",
+              "fullname": "Speaker 1",
+              "company": "Company 1",
+              "abstract": "Speaker Abstract Number 1.",
+              "twittername": ""
+            }
+          ],
+          "room": {
+            "roomname": "Room 1",
+            "sortkey": 100
+          },
+          "title": "Talk Number 1",
+          "leftpos": 0,
+          "length": 50.0,
+          "timeslot": "09:15 - 10:05",
+          "widthpos": 598
+        },
+        {
+          "leftpos": 0,
+          "heightpos": 35.5,
+          "length": 25.0,
+          "room": null,
+          "title": "Coffee",
+          "track": {
+            "color": "#FFFFEE",
+            "incfp": false,
+            "trackname": "Breaks",
+            "sortkey": 120
+          },
+          "cross_schedule": true,
+          "timeslot": "10:05 - 10:30",
+          "widthpos": 598,
+          "toppos": 172.5
+        },
+        {
+          "track": {
+            "color": "#859900",
+            "incfp": true,
+            "trackname": "PostgresOpen 2017",
+            "sortkey": 100
+          },
+          "id": 1501,
+          "toppos": 210.0,
+          "heightpos": 75.0,
+          "speakers": [
+            {
+              "lastmodified": "2015-08-17T18:04:24.018834",
+              "fullname": "Speaker 2",
+              "company": "Company 2",
+              "abstract": "Speaker Abstract Number 2.",
+              "twittername": ""
+            }
+          ],
+          "room": {
+            "roomname": "Room 1",
+            "sortkey": 100
+          },
+          "title": "Talk Number 2",
+          "leftpos": 0,
+          "length": 50.0,
+          "timeslot": "10:30 - 11:20",
+          "widthpos": 598
+        }
+      ]
+    }
+  ]
+}
