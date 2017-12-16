@@ -1,7 +1,7 @@
 {
-    "linkbase": "https://2018.postgresopen.org/",
-    "mediabase": "https://2018.postgresopen.org/",
-
+    "linkbase": "/home/sarah/Websites/2018.postgresopen.org/",
+    "mediabase": "/home/sarah/Websites/2018.postgresopen.org/",
+    "githash": "",
     "conference": "PostgresOpen SV 2018",
 
     "diamond": [
